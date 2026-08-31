@@ -1,0 +1,1 @@
+# Fra-ordine-e-disordine-Propriet-statistiche-del-linguaggio-generato-da-Large-Language-Model
