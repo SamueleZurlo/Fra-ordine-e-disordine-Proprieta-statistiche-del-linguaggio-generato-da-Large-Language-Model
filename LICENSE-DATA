@@ -1,0 +1,59 @@
+Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)
+
+Copyright (c) 2026 Samuele Zurlo
+
+
+AMBITO DI APPLICAZIONE
+
+Questa licenza copre i DATI e i materiali documentali di questo repository:
+
+  *.jsonl                        i cinque dataset di testo generato
+  **/risultati_*/                file di risultato in CSV, JSON e testo
+  **/Risultati Sweep/            file di risultato e figure dello sweep
+  **/confronto_N_eff*/           file di risultato in CSV e JSON
+  Tesi/bozze/*.csv               dati intermedi degli script
+  **/figure/                     figure in PNG e PDF
+  Tesi/*.tex, Tesi/main.pdf      testo della tesi
+
+Il CODICE è coperto da una licenza distinta, riportata in LICENSE (MIT).
+
+
+COSA È PERMESSO
+
+Chiunque può condividere e adattare questo materiale, per qualunque fine,
+anche commerciale, alla sola condizione di riconoscerne la paternità.
+
+
+COME ATTRIBUIRE
+
+  Samuele Zurlo, "Fra ordine e disordine: proprietà statistiche del
+  linguaggio generato da Large Language Model", Università di Bologna,
+  Corso di Laurea in Fisica, A.A. 2025/2026. CC BY 4.0.
+  https://github.com/SamueleZurlo/Fra-ordine-e-disordine-Proprieta-statistiche-del-linguaggio-generato-da-Large-Language-Model
+
+Va inoltre indicato se il materiale è stato modificato e fornito un
+collegamento alla licenza.
+
+
+TESTO INTEGRALE DELLA LICENZA
+
+Il testo legale completo NON è riprodotto in questo file. La licenza si
+applica per riferimento alla versione canonica pubblicata da Creative
+Commons, che in caso di discrepanza prevale su questa nota:
+
+  sintesi     https://creativecommons.org/licenses/by/4.0/deed.it
+  testo legale https://creativecommons.org/licenses/by/4.0/legalcode.it
+
+Per allegare il testo integrale al repository:
+
+  curl -L https://creativecommons.org/licenses/by/4.0/legalcode.txt \
+    -o LICENSE-DATA-full.txt
+
+
+AVVERTENZA SUI DATASET GENERATI
+
+I cinque file JSONL contengono testo prodotto da modelli della famiglia Qwen,
+elencati in FONTI.md con la relativa versione. Il presente atto di licenza
+riguarda la raccolta, l'organizzazione e l'annotazione di quel materiale.
+Chi intenda riutilizzare i testi generati è invitato a verificare anche le
+condizioni delle licenze dei modelli che li hanno prodotti.

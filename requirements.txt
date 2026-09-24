@@ -1,0 +1,11 @@
+# Pacchetti per le analisi (notebook e script in Tesi/bozze).
+# Verificati con Python 3.12 e le versioni indicate a commento.
+numpy            # 2.2.4
+pandas           # 3.0.3
+scipy            # 1.17.1
+matplotlib>=3.9  # 3.11.0; da 3.9 boxplot accetta tick_labels
+tiktoken         # 0.13.0
+certifi          # facoltativo: certificati TLS per i download su Windows
+
+# Solo per generazione_token_singolo.ipynb:
+#   pip install openai transformers

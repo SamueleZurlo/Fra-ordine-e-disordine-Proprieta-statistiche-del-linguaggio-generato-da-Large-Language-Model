@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------- corpora
+# Materiale di terzi: non va ridistribuito. Le istruzioni per riscaricarlo,
+# con identificatori e impronte, sono in FONTI.md.
+cache/
+cache_*/
+corpora_cache/
+corpus_v01/
+Paper/
+Paper Guida/
+
+# ------------------------------------------------------- artefatti LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# ------------------------------------------------------------- Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ------------------------------------------- lavoro in corso e backup
+*.bak
+*.tmp
+*.pre_*
+*_failed.jsonl
+*_checkpoint/
+Tesi/bozze/anteprima/
+Tesi/bozze/log_rigenerazione/
+Tesi/bozze/log_*.txt
+
+# ----------------------------------------------- archivi prodotti dai notebook
+risultati_altmann.zip

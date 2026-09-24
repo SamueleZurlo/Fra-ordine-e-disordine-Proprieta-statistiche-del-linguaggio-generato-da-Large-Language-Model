@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 SamueleZurlo
+Copyright (c) 2026 Samuele Zurlo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+-----------------------------------------------------------------------------
+AMBITO DI APPLICAZIONE
+
+Questa licenza copre il CODICE di questo repository: notebook Jupyter, script
+Python e ogni altro file eseguibile.
+
+I DATI e i materiali documentali — i dataset generati in formato JSONL, i file
+di risultato, le figure e il testo della tesi, compresi i suoi sorgenti LaTeX —
+sono coperti da una licenza distinta, riportata in LICENSE-DATA (Creative
+Commons Attribuzione 4.0 Internazionale).
+
+Le fonti esterne impiegate nel lavoro ma NON ridistribuite qui sono elencate,
+con i rispettivi identificatori e le rispettive impronte, in FONTI.md.
