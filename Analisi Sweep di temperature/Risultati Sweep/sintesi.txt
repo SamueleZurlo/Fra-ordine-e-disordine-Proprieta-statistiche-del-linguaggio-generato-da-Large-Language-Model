@@ -1,0 +1,138 @@
+Sweep di temperatura su testi generati da LLM — sintesi
+======================================================================
+
+Modelli analizzati      : 5  (Qwen2.5-1.5B, Qwen2.5-3B, Qwen2.5-14B, Qwen3.5-2B-Base, Qwen3.5-4B-Base)
+Documenti validi        : 242 su 242
+Temperature             : da 0.4 a 1.5, 12 valori
+Tokenizer di analisi    : cl100k_base, unico per tutti i modelli
+Troncamento comune      : 20,000 token
+Baseline umana          : War and Peace, continuazione del prompt, 20,000 token
+
+Baseline umana alla lunghezza di lavoro
+----------------------------------------------------------------------
+  alpha (Zipf)             1.0755
+  MAPE                     0.1415
+  beta (Heaps)             0.6684
+  R                        0.5074
+  alpha DFA                0.5858
+  R gzip                   0.3810
+  entropia [bit/char]      2.2269
+
+Temperatura critica per criterio e modello
+----------------------------------------------------------------------
+modello                            Qwen2.5-1.5B  Qwen2.5-3B  Qwen2.5-14B  Qwen3.5-2B-Base  Qwen3.5-4B-Base
+criterio                                                                                                  
+[C] $R_{gzip}$ vicino a umano               0.9         1.0          0.9              1.0              1.0
+[F] fine della fase periodica               1.0         1.0          0.6              1.0              1.0
+[L] $D_s$ minima da umano                   0.9         0.9          0.9              0.9              1.0
+[L] $\alpha_{DFA}$ vicino a umano           1.2         1.2          1.4              1.5              0.7
+[Z] $R$ più vicino a umano                  1.0         1.1          1.1              1.1              1.0
+[Z] $\alpha$ più vicino a umano             1.0         1.5          1.3              1.0              1.0
+[Z] $\beta$ più vicino a umano              1.1         1.0          1.3              1.1              1.3
+[Z] MAPE minimo                             0.9         0.9          0.7              0.9              0.9
+
+  mediana su tutti i criteri e modelli : T* = 1
+  intervallo                           : [0.6, 1.5]
+
+Comportamento alle due estremità dello sweep
+----------------------------------------------------------------------
+  Temperatura bassa (T = 0.4):
+    8-grammi ripetuti   0.988   (umano 0.000)
+    R_gzip              0.011   (umano 0.381)
+    R                   0.001   (umano 0.507)
+    alpha DFA           0.399   (umano 0.586)
+    entropia [bit/char] 0.001   (umano 2.227)
+    D_s dall'umano      1.994
+    max|FFT| dell'ACF   11.192
+    copertura GloVe     0.994
+  Temperatura alta (T = 1.5):
+    8-grammi ripetuti   0.000   (umano 0.000)
+    R_gzip              0.687   (umano 0.381)
+    R                   0.675   (umano 0.507)
+    alpha DFA           0.537   (umano 0.586)
+    entropia [bit/char] 4.125   (umano 2.227)
+    D_s dall'umano      1.404
+    max|FFT| dell'ACF   0.018
+    copertura GloVe     0.307
+
+File prodotti
+----------------------------------------------------------------------
+  00_palette.pdf
+  00_palette.png
+  01_baseline_vs_lunghezza.pdf
+  01_baseline_vs_lunghezza.png
+  02_artefatti_continuazione.pdf
+  02_artefatti_continuazione.png
+  03_zipf_curve_Qwen25_14B.pdf
+  03_zipf_curve_Qwen25_14B.png
+  03_zipf_curve_Qwen25_15B.pdf
+  03_zipf_curve_Qwen25_15B.png
+  03_zipf_curve_Qwen25_3B.pdf
+  03_zipf_curve_Qwen25_3B.png
+  03_zipf_curve_Qwen35_2B_Base.pdf
+  03_zipf_curve_Qwen35_2B_Base.png
+  03_zipf_curve_Qwen35_4B_Base.pdf
+  03_zipf_curve_Qwen35_4B_Base.png
+  04_zipf_vs_T.pdf
+  04_zipf_vs_T.png
+  05_heaps_Qwen25_14B.pdf
+  05_heaps_Qwen25_14B.png
+  05_heaps_Qwen25_15B.pdf
+  05_heaps_Qwen25_15B.png
+  05_heaps_Qwen25_3B.pdf
+  05_heaps_Qwen25_3B.png
+  05_heaps_Qwen35_2B_Base.pdf
+  05_heaps_Qwen35_2B_Base.png
+  05_heaps_Qwen35_4B_Base.pdf
+  05_heaps_Qwen35_4B_Base.png
+  06_heaps_R_vs_T.pdf
+  06_heaps_R_vs_T.png
+  07_dfa_Qwen25_14B.pdf
+  07_dfa_Qwen25_14B.png
+  07_dfa_Qwen25_15B.pdf
+  07_dfa_Qwen25_15B.png
+  07_dfa_Qwen25_3B.pdf
+  07_dfa_Qwen25_3B.png
+  07_dfa_Qwen35_2B_Base.pdf
+  07_dfa_Qwen35_2B_Base.png
+  07_dfa_Qwen35_4B_Base.pdf
+  07_dfa_Qwen35_4B_Base.png
+  08_dfa_tutti.pdf
+  08_dfa_tutti.png
+  08b_robustezza_ordine_dfa.pdf
+  08b_robustezza_ordine_dfa.png
+  09_entropia_kl_lcs.pdf
+  09_entropia_kl_lcs.png
+  10_compressione.pdf
+  10_compressione.png
+  11_curve_prefissi.pdf
+  11_curve_prefissi.png
+  12_acf_Qwen25_14B.pdf
+  12_acf_Qwen25_14B.png
+  12_acf_Qwen25_15B.pdf
+  12_acf_Qwen25_15B.png
+  12_acf_Qwen25_3B.pdf
+  12_acf_Qwen25_3B.png
+  12_acf_Qwen35_2B_Base.pdf
+  12_acf_Qwen35_2B_Base.png
+  12_acf_Qwen35_4B_Base.pdf
+  12_acf_Qwen35_4B_Base.png
+  13_transizioni_fase.pdf
+  13_transizioni_fase.png
+  14_diagramma_fase.pdf
+  14_diagramma_fase.png
+  15_temperatura_critica.pdf
+  15_temperatura_critica.png
+  16_pannello_completo.pdf
+  16_pannello_completo.png
+  17_heatmap_modelli.pdf
+  17_heatmap_modelli.png
+  baseline_umana.csv
+  baseline_umana_vs_lunghezza.csv
+  fasi_acf.csv
+  metriche_per_documento.csv
+  robustezza_ordine_dfa.csv
+  sintesi.txt
+  tabella_riassuntiva.csv
+  tabella_riassuntiva.tex
+  temperature_critiche.csv

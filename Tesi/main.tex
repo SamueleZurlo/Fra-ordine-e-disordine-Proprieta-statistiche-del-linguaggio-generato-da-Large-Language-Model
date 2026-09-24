@@ -1,0 +1,255 @@
+% =====================================================================
+%  Tesi di laurea — file principale
+%
+%  Compilare con pdfLaTeX DUE VOLTE: la prima passata scrive main.aux,
+%  la seconda risolve riferimenti incrociati e indice.
+%      pdflatex main.tex && pdflatex main.tex
+% =====================================================================
+\documentclass[12pt,a4paper,oneside]{report}
+
+\usepackage[utf8]{inputenc}
+% T2A copre l'alfabeto cirillico, T1 resta la codifica predefinita per il testo.
+\usepackage[T2A,T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{lmodern}
+% Permette di comporre lettere greche in modo diretto nel testo.
+\usepackage{textalpha}
+
+\usepackage{amsmath,amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[margin=3cm]{geometry}
+\usepackage{caption}
+\usepackage[hidelinks]{hyperref}
+% Consente agli indirizzi lunghi di andare a capo (Appendice B).
+\usepackage{xurl}
+
+\sisetup{group-separator={\,},group-minimum-digits=4}
+\captionsetup{font=small,labelfont=bf}
+
+% Margine di elasticità per le righe difficili da giustificare.
+\emergencystretch=1em
+
+% Collocazione delle figure. I valori predefiniti di LaTeX sono prudenti e
+% mandano in pagina separata ogni figura che superi il 70%% dell'altezza,
+% lasciando pagine di sole immagini. Qui si consente a una figura di
+% condividere la pagina con poco testo, e a più figure di stare insieme.
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.7}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{6}
+
+% Compone testo che mescola alfabeti diversi. Commuta alla codifica T2A, che
+% contiene sia le lettere latine sia quelle cirilliche; il greco resta gestito
+% da textalpha, che seleziona da sé la codifica LGR.
+\newcommand{\multiscritto}[1]{{\fontencoding{T2A}\selectfont #1}}
+
+\begin{document}
+
+% =====================================================================
+%  FRONTESPIZIO
+% =====================================================================
+\input{frontespizio}
+
+% =====================================================================
+%  DEDICA ED EPIGRAFE
+% =====================================================================
+\input{dedica_citazione}
+
+% =====================================================================
+\tableofcontents
+
+% =====================================================================
+%  DICHIARAZIONE SULL'USO DI IA GENERATIVA
+% =====================================================================
+\input{dichiarazione_ia}
+
+% =====================================================================
+%  CAPITOLI
+% =====================================================================
+\input{capitolo1_introduzione}
+
+\input{capitolo2_quadro_teorico}
+
+\input{capitolo3_materiali_metodi}
+
+\input{capitolo4_sweep_temperatura}
+
+\input{capitolo5_burstiness}
+
+\input{capitolo6_discussione_conclusioni}
+
+% =====================================================================
+%  APPENDICI
+% =====================================================================
+\appendix
+
+\input{appendice_codice}
+
+% =====================================================================
+%  BIBLIOGRAFIA
+% =====================================================================
+\begin{thebibliography}{99}
+
+% ---- leggi di scala del vocabolario ---------------------------------
+\bibitem{zipf1949}
+G.~K. Zipf,
+\emph{Human Behavior and the Principle of Least Effort},
+Addison-Wesley (1949).
+
+\bibitem{herdan1964}
+G.~Herdan,
+\emph{Quantitative Linguistics},
+Butterworths (1964).
+
+\bibitem{heaps1978}
+H.~S. Heaps,
+\emph{Information Retrieval: Computational and Theoretical Aspects},
+Academic Press (1978).
+
+\bibitem{mandelbrot1953}
+B.~Mandelbrot,
+\emph{An informational theory of the statistical structure of language},
+in W.~Jackson (a cura di), \emph{Communication Theory}, Butterworths,
+486--502 (1953).
+
+\bibitem{piantadosi2014}
+S.~T. Piantadosi,
+\emph{Zipf's word frequency law in natural language: a critical review and
+future directions},
+Psychonomic Bulletin \& Review \textbf{21}, 1112--1130 (2014).
+
+% ---- correlazioni a lungo raggio ------------------------------------
+\bibitem{altmann2012}
+E.~G. Altmann, G.~Cristadoro, M.~Degli Esposti,
+\emph{On the origin of long-range correlations in texts},
+Proc. Natl. Acad. Sci. USA \textbf{109}(29), 11582--11587 (2012).
+
+\bibitem{montemurro2002}
+M.~A. Montemurro, P.~A. Pury,
+\emph{Long-range fractal correlations in literary corpora},
+Fractals \textbf{10}(4), 451--461 (2002).
+
+\bibitem{peng1994}
+C.-K. Peng, S.~V. Buldyrev, S.~Havlin, M.~Simons, H.~E. Stanley,
+A.~L. Goldberger,
+\emph{Mosaic organization of DNA nucleotides},
+Phys. Rev. E \textbf{49}(2), 1685--1689 (1994).
+
+\bibitem{kantelhardt2001}
+J.~W. Kantelhardt, E.~Koscielny-Bunde, H.~H.~A. Rego, S.~Havlin, A.~Bunde,
+\emph{Detecting long-range correlations with detrended fluctuation analysis},
+Physica A \textbf{295}(3--4), 441--454 (2001).
+
+\bibitem{goh2008}
+K.-I. Goh, A.-L. Barabási,
+\emph{Burstiness and memory in complex systems},
+EPL \textbf{81}(4), 48002 (2008).
+
+% ---- entropia e compressione ----------------------------------------
+\bibitem{vasicek1976}
+O.~Vasicek.
+\newblock A test for normality based on sample entropy.
+\newblock \emph{Journal of the Royal Statistical Society B}, 38(1):54--59, 1976.
+
+\bibitem{shannon1948}
+C.~E. Shannon,
+\emph{A mathematical theory of communication},
+Bell System Technical Journal \textbf{27}(3), 379--423 (1948).
+
+\bibitem{cover2006}
+T.~M. Cover, J.~A. Thomas,
+\emph{Elements of Information Theory}, 2ª ed.,
+Wiley-Interscience (2006).
+
+\bibitem{ziv1977}
+J.~Ziv, A.~Lempel,
+\emph{A universal algorithm for sequential data compression},
+IEEE Trans. Inf. Theory \textbf{23}(3), 337--343 (1977).
+
+\bibitem{ziv1993}
+J.~Ziv, N.~Merhav,
+\emph{A measure of relative entropy between individual sequences with
+application to universal classification},
+IEEE Trans. Inf. Theory \textbf{39}(4), 1270--1279 (1993).
+
+\bibitem{li2004}
+M.~Li, X.~Chen, X.~Li, B.~Ma, P.~M.~B. Vitányi,
+\emph{The similarity metric},
+IEEE Trans. Inf. Theory \textbf{50}(12), 3250--3264 (2004).
+
+\bibitem{hadad2026}
+O.~Hadad, E.~Loru, J.~Nudo, N.~Di Marco, M.~Cinelli, W.~Quattrociocchi,
+\emph{The statistical signature of LLMs},
+arXiv:2602.18152 (2026).
+
+% ---- generazione automatica del testo --------------------------------
+\bibitem{ackley1985}
+D.~H. Ackley, G.~E. Hinton, T.~J. Sejnowski,
+\emph{A learning algorithm for Boltzmann machines},
+Cognitive Science \textbf{9}(1), 147--169 (1985).
+
+\bibitem{vaswani2017}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+Ł.~Kaiser, I.~Polosukhin,
+\emph{Attention is all you need},
+Advances in Neural Information Processing Systems \textbf{30} (2017).
+
+\bibitem{fan2018}
+A.~Fan, M.~Lewis, Y.~Dauphin,
+\emph{Hierarchical neural story generation},
+Proc. of ACL 2018, 889--898.
+
+\bibitem{holtzman2020}
+A.~Holtzman, J.~Buys, L.~Du, M.~Forbes, Y.~Choi,
+\emph{The curious case of neural text degeneration},
+International Conference on Learning Representations (2020).
+
+\bibitem{lippi2019}
+M.~Lippi, M.~A. Montemurro, M.~Degli Esposti, G.~Cristadoro,
+\emph{Natural language statistical features of LSTM-generated texts},
+IEEE Trans. Neural Netw. Learn. Syst. \textbf{30}(11), 3326--3337 (2019).
+
+% ---- fasi e stato critico -------------------------------------------
+\bibitem{ehrenfest1933}
+P.~Ehrenfest,
+\emph{Phasenumwandlungen im ueblichen und erweiterten Sinn, classifiziert nach
+den entsprechenden Singularitaeten des thermodynamischen Potentiales},
+Proc. Royal Acad. Amsterdam \textbf{36}, 153--157 (1933).
+
+\bibitem{nakaishi2024}
+K.~Nakaishi, Y.~Nishikawa, K.~Hukushima,
+\emph{Phase transition in large language models and the criticality of natural
+languages},
+arXiv:2406.05335v3 (2026).
+
+\bibitem{mikhaylovskiy2023}
+N.~Mikhaylovskiy,
+\emph{Long story generation challenge},
+Proc. of the 16th International Natural Language Generation Conference:
+Generation Challenges, 10--16 (2023).
+
+\bibitem{mikhaylovskiy2025states}
+N.~Mikhaylovskiy,
+\emph{States of LLM-generated texts and phase transitions between them},
+First Conference of Mathematics of AI (MathAI 2025), arXiv:2503.06330.
+
+\bibitem{mikhaylovskiy2025zipf}
+N.~Mikhaylovskiy,
+\emph{Zipf's and Heaps' laws for tokens and LLM-generated texts},
+Findings of the Association for Computational Linguistics: EMNLP 2025,
+15469--15481.
+
+\end{thebibliography}
+
+% =====================================================================
+%  RINGRAZIAMENTI
+% =====================================================================
+\input{ringraziamenti}
+
+\end{document}

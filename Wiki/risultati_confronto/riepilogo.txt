@@ -1,0 +1,20 @@
+GROKIPEDIA vs WIKIPEDIA — 40 articoli appaiati per titolo
+====================================================================
+coppie complete: 40 | finestra di analisi: 80,000 caratteri
+lunghezza mediana: wikipedia 91,124 | grokipedia 106,348 (rapporto 1.18)
+
+PATERNITA' (sovrapposizione di 8-grammi con Wikipedia)
+  mediana 0.0003 | massimo 0.0463
+  scritti da Grok (<= 20%): 40/40
+
+REVISIONI
+  Grokipedia non pubblica una cronologia: nessun endpoint history/versions/revisions.
+  catture su Internet Archive: mediana 96 per articolo
+  v0.1 (ott 2025) recuperata per 40/40 articoli
+  similarita' v0.1 <-> attuale: mediana 0.884
+  invariati (>0.90): 18/40 | riscritti (<0.50): 13/40
+  variazione di lunghezza: mediana -1,547 caratteri
+  -> il corpus v0.1 e' salvato in risultati_confronto/corpus_v01 e puo'
+     essere usato come TERZO corpus nell'analisi di Altmann.
+
+COPPIE UTILIZZABILI PER L'ANALISI: 36/40

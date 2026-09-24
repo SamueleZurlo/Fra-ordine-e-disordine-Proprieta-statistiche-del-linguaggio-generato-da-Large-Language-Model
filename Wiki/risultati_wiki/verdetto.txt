@@ -1,0 +1,16 @@
+PROSA ENCICLOPEDICA E PROTOCOLLO DI ALTMANN — test di fattibilità
+======================================================================
+articoli Wikipedia analizzati: 40 | segmenti letterari: 20
+lunghezza comune: 50,000 caratteri | fit di gamma su t in (100, 2000)
+
+  letterario   cv_tau :  103/ 140 = 0.74 [0.66, 0.80]  p=2.2e-08
+  letterario   gamma  :  122/ 140 = 0.87 [0.81, 0.92]  p=3.6e-20
+  wikipedia    cv_tau :  192/ 280 = 0.69 [0.63, 0.74]  p=4.8e-10
+  wikipedia    gamma  :  216/ 280 = 0.77 [0.72, 0.82]  p=1.9e-20
+
+VERDETTO sulla burstiness delle keyword:
+  L'effetto ESISTE in Wikipedia (0.69, IC inferiore 0.63 > 0.5).
+  Nel letterario vale 0.74. Il confronto con Grokipedia ha un segnale
+  da rilevare: si puo' procedere.
+
+  burstiness delle keyword: wikipedia 1.51 vs letterario 1.62 (rapporto 0.93)

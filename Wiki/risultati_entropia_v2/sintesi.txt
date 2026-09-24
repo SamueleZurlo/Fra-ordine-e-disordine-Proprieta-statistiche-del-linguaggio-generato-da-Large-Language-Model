@@ -1,0 +1,26 @@
+ENTROPIA DEGLI INTERVALLI — J = h(ln tau) - h_Poisson(n, mu)
+====================================================================
+terne: 39 | N_EFF = 60,000 caratteri | MIN_TAU = 25
+sequenze con J stimabile: 5,343/5,617 (95%)
+
+VALIDAZIONE
+  'e': da N=20,000 a N=3,186,696  cv_tau 0.84->0.84 (x1.01)  J -0.36->-0.32 (+0.04 bit)
+  'prince': da N=40,000 a N=3,186,696  cv_tau 1.26->3.89 (x3.08)  J -0.06->+0.15 (+0.21 bit)
+  'pierre': da N=40,000 a N=3,186,696  cv_tau 1.97->6.86 (x3.49)  J -0.04->-0.12 (-0.08 bit)
+
+J PER LIVELLO [bit]
+  lettere             Guerra e pace=-0.178  Wikipedia=-0.202  Grokipedia v0.1=-0.201  Grokipedia oggi=-0.197
+  parole funzione     Guerra e pace=-0.188  Wikipedia=-0.287  Grokipedia v0.1=-0.300  Grokipedia oggi=-0.290
+  controlli appaiati  Guerra e pace=+0.186  Wikipedia=+0.053  Grokipedia v0.1=-0.212  Grokipedia oggi=-0.165
+  keyword             Guerra e pace=+0.061  Wikipedia=+0.092  Grokipedia v0.1=-0.001  Grokipedia oggi=-0.011
+
+CONFRONTI APPAIATI (keyword)
+  Grokipedia oggi vs Wikipedia         diff -0.105 bit, p=4.1e-04 (significativa)
+  Grokipedia v0.1 vs Wikipedia         diff -0.077 bit, p=1.4e-04 (significativa)
+  Grokipedia oggi vs Grokipedia v0.1   diff -0.005 bit, p=7.9e-01 (non significativa)
+
+NOTE
+  - J e' invariante per dilatazione dell'asse dei caratteri: il confonditore
+    della diversa lunghezza delle frasi non la tocca.
+  - il null e' simulato con lo stesso stimatore, n e mu: il bias si cancella.
+  - sotto MIN_TAU=25 intervalli J non viene stimata.

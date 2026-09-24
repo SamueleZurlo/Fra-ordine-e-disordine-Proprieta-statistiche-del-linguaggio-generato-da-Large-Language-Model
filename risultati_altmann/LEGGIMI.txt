@@ -1,0 +1,42 @@
+Analisi Altmann et al. (PNAS 2012) sui testi generati da LLM
+
+File
+----
+risultati_altmann.csv        una riga per (documento x sequenza bersaglio)
+sintesi.txt                  sintesi testuale
+dati/finite_size.csv         deriva degli stimatori con la lunghezza del testo
+dati/copertura_parole.csv    frazione di parole di riferimento stimabili
+dati/test_appaiato.csv       keyword vs controlli appaiati, con intervalli di Wilson
+dati/dissociazione.csv       gamma lettere e burstiness keyword, normalizzati sull'umano
+dati/shuffling_M1M2.csv      esiti degli shuffling M1/M2
+dati/keyword_auto_T1_appaiato.csv  keyword auto vs controlli, dentro ogni documento
+dati/keyword_auto_T1_livelli.csv   burstiness per livello, LLM vs umano, attorno a T=1
+dati/keyword_auto_T1_ricorrenza.csv ricorrenza delle keyword auto (diagnosi primaria)
+figure/fig1..fig11 *.png     figure
+
+Colonne principali di risultati_altmann.csv
+-------------------------------------------
+sequenza          etichetta della sequenza binaria (lettera, parola, "vocali", "spazio")
+tipo              lettera | spazio | vocali | funzione | keyword | appaiata
+livello           vc | lettere | parole  (livello nella gerarchia di Fig. 1 del paper)
+wordset           riferimento (parole scelte sul testo umano) | auto (scelte nel documento)
+n_eventi          occorrenze; sotto MIN_EVENTS=15 la sequenza non viene stimata
+gamma             esponente da sigma^2_X(t) ~ t^gamma, fit su t in (100, 2000)
+gamma_se          errore standard della pendenza
+gamma_stretto     stesso fit sul range conservativo (100, 500) (1% della lunghezza)
+gamma_A1          null model A1 (0/1 mescolati): deve valere ~1
+gamma_A2          null model A2 (tau mescolati): preserva p(tau), distrugge C_tau(k)
+quota_burstiness  (gamma_A2 - 1)/(gamma - 1): quota di correlazione dovuta alla burstiness
+cv_tau            sigma_tau/<tau>, indicatore di burstiness (1 = Poisson)
+B_goh             (sigma_tau - <tau>)/(sigma_tau + <tau>), burstiness di Goh-Barabasi
+degenerato        True se il documento e' in loop di ripetizione: burstiness artefattuale
+
+Come leggere i risultati
+------------------------
+1. Controllare fig1: se sigma_tau/<tau> deriva con N, confrontare SOLO con l'umano a N_EFF.
+2. Controllare che gamma_A1 ~ 1 ovunque: e' la validazione della pipeline.
+3. fig3 e' l'analogo della Fig. 3 del paper: nel testo umano le lettere stanno in basso a
+   sinistra (correlate ma non bursty) e le keyword in alto a destra.
+4. fig7 e' la domanda: in basso a destra = correlazioni riprodotte senza burstiness semantica.
+
+Parametri: N_EFF=50000, MIN_EVENTS=15, N_NULL_REPS=3, seed=20260811

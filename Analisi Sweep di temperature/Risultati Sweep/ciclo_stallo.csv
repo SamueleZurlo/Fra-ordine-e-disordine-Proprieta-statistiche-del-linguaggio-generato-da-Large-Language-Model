@@ -1,0 +1,243 @@
+modello,temperatura,sample_id,n_parole,H_parola_norm,R_gzip,stallo,L_ciclo,L_ciclo_char,V_ciclo,H_ciclo,frazione_stallo,accordo,estratto
+Qwen2.5-1.5B,0.4,5,14015,0.516016138656325,0.011266551377022945,True,14.0,70.0,9.0,0.9757546965194905,0.9790938280413842,0.92858185001459,"am sorry for you,” she repeated, “and I am sorry for you.” “Then I "
+Qwen2.5-1.5B,0.4,2,15992,0.39543631376776034,0.011330746967177781,True,5.0,18.0,5.0,1.0000000000000002,0.9832416208104052,1.0,don’t know him. I 
+Qwen2.5-1.5B,0.5,3,14931,0.7227111601504884,0.013818486646495605,True,40.0,192.0,24.0,0.9821358204401895,0.9647712812269774,0.8998955795335886,"her,” said Anna Pávlovna, who was now crying and was beginning to sob. “Because she is a woman of the world, and I don’t like her.” “Because she is a woman of the world, and I don’t like "
+Qwen2.5-1.5B,0.5,4,17622,0.5630441658869554,0.015586536352336153,True,19.0,89.0,15.0,0.9591804397450658,0.9748609692429917,1.0,dying. She saw the expression of the last moments of life in the eyes of a man who was 
+Qwen2.5-1.5B,0.6,2,14236,0.44104821644437253,0.02141545373138859,True,11.0,51.0,8.0,0.9713256910609176,0.961295307670694,1.0,He is a good sort of gentleman. He is a nobleman. 
+Qwen2.5-1.5B,0.5,5,12668,0.7548916543252994,0.015268512903443164,True,36.0,202.0,32.0,0.9853467363875543,0.9610830438901168,0.999917620891342,"at him with a smile of tenderness. “Ah! I see,” said the prince, who, as a man of affairs, was always ready to read between the lines. “Baron Morio is a Frenchman,” added Anna Pávlovna, smiling "
+Qwen2.5-1.5B,0.4,1,11690,0.6303359369386113,0.009710076963394113,True,28.0,157.0,13.0,0.9516816661216702,0.9791274593669803,1.0,"a Frenchman.” “Then you are not a German,” said the prince, “but you are a Frenchman.” “Then you are not a German,” said Anna Pávlovna, “but you are "
+Qwen2.5-1.5B,0.6,3,15479,0.5127964152484302,0.010953357733714086,True,8.0,39.0,8.0,1.0,0.9876607015957103,1.0,"children, but no son. I have had five "
+Qwen2.5-1.5B,0.4,4,16134,0.6665814394212444,0.010151417172000634,True,21.0,103.0,16.0,0.9700449806689346,0.9841948679806619,1.0,"t know what you mean by that. I don’t understand you. I am satisfied with my intelligence, but I don’"
+Qwen2.5-1.5B,0.4,3,14668,0.611918374230822,0.013065084963129208,True,44.0,208.0,14.0,0.9561391670128638,0.9625034087810199,1.0,course I am a good mother. I have heard that I am a very good mother.” “Are you a good wife?” “Of course I am a good wife. I have heard that I am a very good wife.” “Are you a good mother?” “Of 
+Qwen2.5-1.5B,0.5,1,16109,0.6292697243802213,0.011887110469021278,True,29.0,142.0,19.0,0.9527702828303906,0.981501024272146,1.0,"to look upon as a fool.... And you, my friend, you have not been a success. You have not been able to show your talents. You have been made "
+Qwen2.5-1.5B,0.5,2,15834,0.4383516080457122,0.011477798188382847,True,11.0,55.0,6.0,0.986606462892553,0.9835164835164835,1.0,"you have been loved, and you have not been loved. And "
+Qwen2.5-1.5B,0.6,1,16232,0.5317588253639867,0.020139224470071965,True,39.0,183.0,12.0,0.9634600980131107,0.9563208477082307,1.0,"not the best. I have been very beautiful. But I am not the best. I have been very beautiful, and I have been very perfect. But I am not the best. I have been very perfect. But I am "
+Qwen2.5-1.5B,0.7,1,12748,0.4168914018530197,0.0315239195185703,True,5.0,29.0,5.0,1.0000000000000002,0.8713523689990587,1.0,woman?” “Is she a Russian 
+Qwen2.5-1.5B,0.8,1,16037,0.5456914500286497,0.11944317294488274,True,8.0,34.0,8.0,1.0,0.5506017334913014,1.0,of the world. She was not a woman 
+Qwen2.5-1.5B,0.6,4,17306,0.47084133466984,0.02735612812874589,True,21.0,102.0,10.0,0.9781850139750835,0.9392118340459956,1.0,"seen by the prince in the drawing-room, and she was seen by the prince in the drawing-room. She was "
+Qwen2.5-1.5B,0.7,3,17773,0.5350707933182928,0.03072549774626832,True,39.0,192.0,17.0,0.9872326807647697,0.9264052214032521,1.0,"a man of State and of business, but he had not been trained in the Government service but he was a man of State and of business. He had not been trained in the Government service but he was "
+Qwen2.5-1.5B,0.7,5,13630,0.36232451558389905,0.053680308646644984,True,75.0,355.0,12.0,0.5727674250882706,0.7910491562729274,1.0,"day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day! One day!” The Prince sighed and sighed, and he was so charming that he said, “One day, one "
+Qwen2.5-1.5B,0.7,2,15426,0.726386162758176,0.017155491622046406,True,68.0,330.0,38.0,0.9351272517541339,0.8026059898872034,1.0,"she is so ungrateful and, I should say, unreconciled with fate. She is a woman, a woman who has lost not only her husband, but also her children. And yet she is so beautiful. Her eyes are so large and black as those of a bird. She is so beautiful and has such a soul. She has a soul, an angelic soul, a soul of gold, and yet "
+Qwen2.5-1.5B,0.8,5,15367,0.38079694952069404,0.09154989528884953,True,4.0,14.0,4.0,1.0,0.827812845708336,1.0,son. I have a 
+Qwen2.5-1.5B,0.7,4,13647,0.7025034589678482,0.04776964708684548,True,62.0,333.0,47.0,0.9826379383818522,0.8141716128086759,1.0,"never in a mood to give offense. “Madame Chérapin is a splendid woman,” said the prince, with a smile of contempt for Madame Chérapin, whose name he had just said, he quitted the sofa. Anna Pávlovna did not dare to say so openly, for she knew that Anna Pávlovna had always been hostess of some kind or other, and that she was "
+Qwen2.5-1.5B,0.8,4,15708,0.5138884720379507,0.10731863749808285,True,28.0,118.0,10.0,0.9578791966200297,0.6929590017825312,1.0,"but she didn’t know him, and he didn’t know her, and she didn’t know him, and he didn’t know her, and she knew him, "
+Qwen2.5-1.5B,0.8,3,15669,0.5087331672111901,0.0551428099719333,True,22.0,131.0,13.0,0.965459225394398,0.8303018699342651,0.9986910994764397,"through all the necessary troubles. We have gone through all the necessary troubles. We have been broken, and we have not passed "
+Qwen2.5-1.5B,0.6,5,16876,0.4190694175048772,0.015204493122647142,True,9.0,44.0,7.0,0.9708357627258161,0.9789642095283243,1.0,pain. He had the same feeling and the same 
+Qwen2.5-1.5B,0.9,2,11292,0.6702491860851056,0.27286445542503773,False,,,,,,,
+Qwen2.5-1.5B,0.9,3,17553,0.3454613202354102,0.09210191830110093,True,78.0,458.0,3.0,0.8672174912843854,0.6894547940522987,1.0,the favorite of the favorite-of favorite-of favorite-of favorite-of favorite of the favorite of the favorite-of favorite-of favorite-of favorite-of favorite-of favorite-of favorite-of favorite-of favorite of the favorite-of favorite-of favorite-of favorite-of favorite-of favorite-of the favorite-of favorite-of favorite-of favorite-of favorite-of favorite-of the favorite-of favorite-of favorite-of 
+Qwen2.5-1.5B,0.9,4,15712,0.5496212593164472,0.14122251255801743,True,13.0,67.0,11.0,0.9807239409418418,0.5772021384928717,0.9996687279151943,"a friend of the Prince of the Covenant, and had also made himself "
+Qwen2.5-1.5B,0.9,5,13058,0.6604858957900216,0.3209929175548374,False,,,,,,,
+Qwen2.5-1.5B,1.1,2,5625,0.9868858003064221,0.6906725448183374,False,,,,,,,
+Qwen2.5-1.5B,1.0,1,5197,0.9782712135784534,0.6907531259086944,False,,,,,,,
+Qwen2.5-1.5B,1.1,3,4794,0.9938097335098712,0.7031391535217867,False,,,,,,,
+Qwen2.5-1.5B,1.1,1,4796,0.9938355294160408,0.6909244259138433,False,,,,,,,
+Qwen2.5-1.5B,1.1,5,4679,0.9918330541305503,0.6900821380409464,False,,,,,,,
+Qwen2.5-1.5B,1.0,4,6964,0.9426506400319865,0.5431232991417208,False,,,,,,,
+Qwen2.5-1.5B,1.0,5,4631,0.9525549773093586,0.6751742255628124,False,,,,,,,
+Qwen2.5-1.5B,1.0,3,4823,0.9539684371128987,0.642090584954284,False,,,,,,,
+Qwen2.5-1.5B,1.2,1,5177,0.9940509733474104,0.6939265411917175,False,,,,,,,
+Qwen2.5-1.5B,1.0,2,6764,0.9121872113531125,0.510928186204939,False,,,,,,,
+Qwen2.5-1.5B,1.2,2,5442,0.9945018145091661,0.6897752036622643,False,,,,,,,
+Qwen2.5-1.5B,1.2,3,4600,0.9968266037720012,0.6999575010624735,False,,,,,,,
+Qwen2.5-1.5B,1.2,4,5507,0.994124950503897,0.685170012290045,False,,,,,,,
+Qwen2.5-1.5B,1.3,1,4447,0.9963995104147809,0.6925082666899737,False,,,,,,,
+Qwen2.5-1.5B,1.3,3,5521,0.9965235891888937,0.6896241117513333,False,,,,,,,
+Qwen2.5-1.5B,1.3,2,5658,0.9958373424460986,0.6864860249331132,False,,,,,,,
+Qwen2.5-1.5B,1.2,5,4268,0.9961282545563044,0.6986270537924826,False,,,,,,,
+Qwen2.5-1.5B,1.3,4,5725,0.9957992902450923,0.689569770733088,False,,,,,,,
+Qwen2.5-1.5B,1.3,5,5126,0.9975366009733835,0.6916533529081567,False,,,,,,,
+Qwen2.5-1.5B,1.4,1,5765,0.9967428378146358,0.6842251332149201,False,,,,,,,
+Qwen2.5-1.5B,1.4,3,5175,0.9972443794959667,0.6940920468767778,False,,,,,,,
+Qwen2.5-1.5B,1.4,2,5527,0.9970390800379969,0.6861901978792686,False,,,,,,,
+Qwen2.5-1.5B,1.4,4,5262,0.9972247258965486,0.6868091893555699,False,,,,,,,
+Qwen2.5-1.5B,1.4,5,5896,0.9962316035999503,0.687080911935628,False,,,,,,,
+Qwen2.5-1.5B,1.5,1,5469,0.9970961856389662,0.6807123046928633,False,,,,,,,
+Qwen2.5-1.5B,1.5,2,5892,0.995970372773659,0.6803957693619925,False,,,,,,,
+Qwen2.5-1.5B,1.5,3,5109,0.9969740483966305,0.6848247393829147,False,,,,,,,
+Qwen2.5-1.5B,1.5,4,5151,0.9970855364963127,0.6837871982032566,False,,,,,,,
+Qwen2.5-1.5B,1.5,5,5300,0.9971148820006173,0.6917012563723988,False,,,,,,,
+Qwen2.5-3B,0.4,1,15504,0.8162089183621316,0.009816786333250805,True,38.0,192.0,32.0,0.9784814237185753,0.9803921568627451,1.0,"it. I am not a good and virtuous father,” and, in order not to seem insensitive, he said: “Your words are very kind, but I don’t appreciate my children, and do not wish to be praised for "
+Qwen2.5-3B,0.4,2,16826,0.471074285717049,0.012158890845070422,True,8.0,35.0,8.0,1.0,0.31451325329846663,1.0,"woman of the world, and she was a "
+Qwen2.5-3B,0.4,3,16981,0.580700044878605,0.014035087719298246,True,19.0,93.0,15.0,0.9795193359563686,0.9810376302926801,1.0,"type, and she was always in a state of conflict with herself. She was a woman of the lowest "
+Qwen2.5-3B,0.4,4,18261,0.6381631668903653,0.014518751774514106,True,45.0,191.0,17.0,0.9697866039022256,0.9794644323969115,0.9555518188442352,"of the world, and she was not accustomed to being told by a man of the world that he was a man of the world, and she was not used to being told by a man of the world that he was not a man "
+Qwen2.5-3B,0.4,5,15067,0.78997991018977,0.015483920544050409,True,125.0,629.0,56.0,0.9279971706634015,0.9603769828101149,0.9998605785988149,"wish you to ask your son to marry my daughter.” The prince, who was not accustomed to be contradicted, was about to leave, but Anna Pávlovna stopped him again: “Don’t go away, and don’t think I am talking to you as if you were not a nobleman. I know that you are a nobleman. I know that you are a nobleman. I know that you are a nobleman. I know that you are a nobleman.” She repeated this with an em"
+Qwen2.5-3B,0.5,1,16682,0.48791453254905787,0.0203620219515203,True,14.0,61.0,10.0,0.9741108952988199,0.9651720417216161,1.0,"had not come to see him, but she was coming to see him. She "
+Qwen2.5-3B,0.5,2,15546,0.5058598503679048,0.008261132379609107,True,7.0,34.0,7.0,0.9999999999999999,0.9918306959989708,0.9998702309888399,good to his servants. He is very 
+Qwen2.5-3B,0.5,3,15706,0.544954149260637,0.01331595495955497,True,27.0,128.0,11.0,0.9648052476943029,0.9820450783140201,0.9998701045658245,"learned to be a good courtier and not to be a courtier. She had learned to be discreet and to be a good courtier, and she had "
+Qwen2.5-3B,0.5,4,16339,0.6211678340006425,0.019217590364959247,True,23.0,96.0,17.0,0.9710184004172842,0.8666381051471939,1.0,"good wife. And, as I say, I think it would be a very good match. I am sure she will be a very "
+Qwen2.5-3B,0.5,5,17185,0.5076968684462675,0.016380729513884165,True,10.0,42.0,10.0,0.9999999999999998,0.9765493162641838,1.0,"the first class, and that he was a man of "
+Qwen2.5-3B,0.6,1,15556,0.5772588727549053,0.015283842794759825,True,36.0,193.0,21.0,0.8596859616214738,0.9792363075340704,1.0,"and the poor, and the illustrious and the unknown, were full of hopes and expectations, and all the people in St. Petersburg, the famous and the not so famous, the high and the low, the rich "
+Qwen2.5-3B,0.6,2,16042,0.47002266150330957,0.019047227813608292,True,248.0,1127.0,11.0,0.8965320092880239,0.8341852636828325,1.0,blame. You are a bad father. You are a bad lover of children. You are not to blame. You are not to blame. You are not to blame. You are a bad lover of children. You are not to blame. You are not to blame. You are not to blame. You are not to blame. You are a bad lover of children. You are not to blame. You are not to blame. You are not to blame. You are not to blame. You are a bad father. You are 
+Qwen2.5-3B,0.6,3,16342,0.5585562202159386,0.01954191318610509,True,14.0,73.0,14.0,0.9999999999999998,0.9297515603965243,1.0,"it was a song in which the Empress had always taken great pleasure, and "
+Qwen2.5-3B,0.6,4,16254,0.6074794902180622,0.01868895797126282,True,16.0,83.0,15.0,0.9918373461380351,0.5885320536483327,0.9375916230366492,"and they have not promised it. He has not asked for any help from the Portuguese, "
+Qwen2.5-3B,0.6,5,15243,0.3476591032533145,0.01765330121034819,True,8.0,37.0,5.0,0.9690222556651344,0.9711342911500361,1.0,"she was sad, and she was happy, and "
+Qwen2.5-3B,0.7,1,12096,0.3444544119551414,0.0512588549173541,True,3.0,16.0,3.0,0.9999999999999998,0.8482969576719577,1.0,"all, and, above "
+Qwen2.5-3B,0.7,2,13825,0.4468403630957075,0.028318040646662178,True,8.0,45.0,8.0,1.0,0.911754068716094,0.9998412320393745,"her ‘faithful slave,’ and he had always been "
+Qwen2.5-3B,0.7,3,16986,0.5100406019944219,0.025341984104870704,True,42.0,185.0,14.0,0.9437832918112419,0.9424231720240198,0.9998747338093449,"happy, and you must not be fond of anything, and you must not wish to be happy, and you must not be fond of a wife, and you must not be fond of a husband, and you must not wish to be "
+Qwen2.5-3B,0.7,4,14735,0.50482886498526,0.023863044287309267,True,57.0,256.0,17.0,0.85325237331207,0.9587376993552765,0.9998578535891969,first Vasíli. He is the first. He is so good. He is the first of the Kórines. He is the first. He is so good and submissive and gentle. He will be a good Bishop. He is the first Vasíli. He is the first. He is so good. He is the first of men. He is the 
+Qwen2.5-3B,0.7,5,14931,0.3633116366629609,0.02993642730249152,True,17.0,77.0,6.0,0.9268988891971944,0.31250418592190743,0.99978489997849,"not, and she was not, and the Empress was not, and she was not, and she was "
+Qwen2.5-3B,0.8,1,8607,0.4903167337637108,0.01699454114738902,True,9.0,61.0,9.0,1.0,0.9702567677471825,1.0,"Bergin. New York: Harper & Row, 1957. Translated by John H. "
+Qwen2.5-3B,0.8,2,15416,0.3470857451090534,0.0390513866824492,True,4.0,25.0,4.0,1.0,0.6242864556305138,1.0,They are not synonymous. 
+Qwen2.5-3B,0.8,3,16552,0.5157272969220856,0.04733590827677799,True,13.0,66.0,11.0,0.9807239409418418,0.2706621556307395,1.0,"his daughter, and she was good and lovely. He was not jealous of "
+Qwen2.5-3B,0.8,4,15457,0.3690500228884983,0.059727711901624944,True,4.0,20.0,4.0,1.0,0.8353496797567446,1.0,"and you are sorry, "
+Qwen2.5-3B,0.8,5,14635,0.4240247307149619,0.06469668987072028,True,60.0,284.0,14.0,0.7368064988154543,0.8544584899214213,1.0,"French, or the King of the British, or the King of the Portuguese, or the King of the Swedes, or the King of the Prussians, or the King of the Serbs, or the King of the Grecians, or the King of the Danes, or the King of the Austrians, or the King of the Czars, or the King of the "
+Qwen2.5-3B,0.9,3,14589,0.4578960169086857,0.09876304366226135,True,14.0,79.0,7.0,0.9491132589845683,0.7278771677291109,0.9998114097123998,"secretary of the two abbés, and the secretary of the two secretaries, and the "
+Qwen2.5-3B,0.9,4,10997,0.5205400579476462,0.12851451176111953,False,,,,,,,
+Qwen2.5-3B,0.9,5,8810,0.43625056184614874,0.09460177142759246,True,3.0,20.0,3.0,0.9999999999999998,0.68683314415437,0.9990079365079365,"and Count Vladímyr, "
+Qwen2.5-3B,1.0,4,4716,0.9525654197582436,0.6503438057972115,False,,,,,,,
+Qwen2.5-3B,1.1,1,2760,0.9941855026473528,0.6995792707359423,False,,,,,,,
+Qwen2.5-3B,1.1,3,2744,0.9865822297162289,0.6897133790216401,False,,,,,,,
+Qwen2.5-3B,1.1,4,3690,0.9823178700572938,0.7063151765390927,False,,,,,,,
+Qwen2.5-3B,1.1,5,4751,0.961023164242819,0.6867822956981541,False,,,,,,,
+Qwen2.5-3B,1.2,1,3584,0.9959465285307173,0.7046426483709196,False,,,,,,,
+Qwen2.5-3B,1.2,2,2994,0.9948122216538493,0.7016604762945161,False,,,,,,,
+Qwen2.5-3B,1.2,3,4074,0.9948940099205857,0.6975800854450391,False,,,,,,,
+Qwen2.5-3B,1.2,4,4444,0.9905477905378296,0.7074824665975136,False,,,,,,,
+Qwen2.5-3B,1.2,5,4225,0.9933199067082608,0.7046075509190264,False,,,,,,,
+Qwen2.5-3B,1.3,1,4595,0.9956162815743629,0.7005722670579604,False,,,,,,,
+Qwen2.5-3B,1.3,2,3908,0.9962870204169478,0.7128531941031941,False,,,,,,,
+Qwen2.5-3B,1.3,3,3606,0.9963686210874718,0.7044061731156341,False,,,,,,,
+Qwen2.5-3B,1.3,4,4184,0.9963899590598129,0.7107082873095372,False,,,,,,,
+Qwen2.5-3B,1.3,5,3812,0.9960037807967288,0.7162942043222004,False,,,,,,,
+Qwen2.5-3B,1.4,1,3983,0.9972745491533526,0.7004310344827587,False,,,,,,,
+Qwen2.5-3B,1.4,2,4067,0.9965059847787203,0.7121054043580648,False,,,,,,,
+Qwen2.5-3B,1.4,3,4128,0.9960782172041652,0.7044367116137451,False,,,,,,,
+Qwen2.5-3B,1.4,4,4925,0.9958719370380841,0.7106359874387345,False,,,,,,,
+Qwen2.5-3B,1.4,5,4534,0.9954978443067416,0.7111407311928756,False,,,,,,,
+Qwen2.5-3B,1.5,1,4466,0.9966783314103304,0.6969124222463574,False,,,,,,,
+Qwen2.5-3B,1.5,2,4601,0.9960423918707687,0.7008554307755811,False,,,,,,,
+Qwen2.5-3B,1.5,3,4297,0.9955063987344953,0.7111372617387262,False,,,,,,,
+Qwen2.5-3B,1.5,4,4548,0.9969021275254957,0.7084029017214578,False,,,,,,,
+Qwen2.5-3B,1.5,5,4405,0.997111887811898,0.7120895088637024,False,,,,,,,
+Qwen2.5-14B,0.4,1,15001,0.39214934237696936,0.01971475915985667,True,24.0,113.0,9.0,0.8347959727678894,0.9732017865475635,1.0,very charming. He is very modest. He is very kind. He is very good. He is very clever. He is very witty. He is 
+Qwen2.5-14B,0.6,1,13281,0.7017082296607022,0.03602479525332838,True,150.0,839.0,60.0,0.9264891503993384,0.8869061064678865,0.9998280161664803,"They both were so clever. The vicomte was a Frenchman, and he felt that in court circles, where he lived, cleverness was the most important qualification. “Ah, mon cher vicomte! I was just speaking of you. I was saying to the prince that you are the most interesting man in Russia,” said Anna Pávlovna, turning to the vicomte. The vicomte bowed to Anna Pávlovna and the prince. “Ah, mon cher vicomte!"
+Qwen2.5-14B,0.7,1,16394,0.48493627178029464,0.08704545973990355,True,16.0,85.0,5.0,0.9487027337173605,0.681346834207637,0.9998206921283844,"pleased that she was pleased that she was pleased, and she was pleased that she was "
+Qwen2.5-14B,0.8,1,15859,0.5531879617816373,0.1405245678061347,True,12.0,56.0,7.0,0.9801500856796055,0.6154234188788701,1.0,"glad to see her, and was delighted to see her, and was "
+Qwen2.5-14B,1.1,1,2303,0.9908642570222754,0.7375386622340985,False,,,,,,,
+Qwen2.5-14B,1.2,1,2446,0.9947858134137817,0.7197518685738135,False,,,,,,,
+Qwen2.5-14B,1.3,1,3007,0.9975383444357127,0.7149094894640079,False,,,,,,,
+Qwen2.5-14B,1.4,1,3469,0.9959173668918444,0.7161070973225669,False,,,,,,,
+Qwen2.5-14B,1.5,1,3127,0.998503826671435,0.7166949138321616,False,,,,,,,
+Qwen2.5-14B,0.5,3,12737,0.7047924242317058,0.017321785476349102,True,33.0,189.0,28.0,0.981514473962564,0.9554840229253356,1.0,"her. I am sure she has everything.” “No, no. I don’t think so,” said the prince, smiling. “She is very clever, but she is frivolous and vain.” “Nonsense! You are prejudiced against "
+Qwen2.5-14B,0.9,3,14970,0.6702999171659599,0.18289133814093197,True,42.0,235.0,29.0,0.9640635170551519,0.5257181028724115,1.0,"copies of this EBook without making any changes to it. 1.I.9. You may choose to distribute copies of this EBook to others who are at least three years old, provided that you keep your copy of this EBook, and that you distribute "
+Qwen2.5-14B,1.0,5,6206,0.9366371831238318,0.6368839752653186,False,,,,,,,
+Qwen3.5-2B-Base,0.4,2,16986,0.8207710081335605,0.008485505003610854,True,62.0,277.0,29.0,0.9458313217357335,0.986165077122336,1.0,"do. I have tried to make them gentlemen, but they have never been good enough for me. I have tried to be a good father, but I have never been a good mother. I have never been a good mother, and I don’t know how to be one. I can’t do anything for them. I don’t know what to "
+Qwen3.5-2B-Base,0.4,1,16297,0.722267088180419,0.007639736103379251,True,22.0,110.0,18.0,0.9822227626598229,0.9854574461557342,1.0,Do you know that I have been married for twenty years? I have been married to a woman who is not happy.” “
+Qwen3.5-2B-Base,0.4,3,17004,0.6845825632041359,0.008351893095768375,True,16.0,59.0,9.0,0.985827739955402,0.9938837920489296,1.0,good wife. I say she is a good wife. I don’t say she is a 
+Qwen3.5-2B-Base,0.4,4,15746,0.6769692647601246,0.006660572025597493,True,37.0,198.0,12.0,0.9129118950774299,0.988886066302553,1.0,citizens. I have seen them become good men. I have seen them become good husbands and fathers. I have seen them become good people. I have seen them become good men. I have seen them become good 
+Qwen3.5-2B-Base,0.4,5,16773,0.5729107527448226,0.012664829024808165,True,64.0,307.0,14.0,0.86785428842722,0.9793716091337268,0.9999388865122533,of the true. You have a great sense of the just. You have a great sense of the noble. You have a great sense of the honorable. You have a great sense of the beautiful. You have a great sense of the sublime. You have a great sense of the great. You have a great sense of the good. You have a great sense 
+Qwen3.5-2B-Base,0.5,1,14793,0.47580578622172426,0.01620704992772156,True,10.0,44.0,8.0,0.9739760316291209,0.9691746096126547,1.0,like him.’ And you will say: ‘I know I will 
+Qwen3.5-2B-Base,0.5,2,11220,0.42722038189480893,0.012377483986556906,True,10.0,69.0,6.0,0.9756149631508355,0.9564171122994652,1.0,"smiling. “Very well,” he said, smiling. “Very well,” she said, "
+Qwen3.5-2B-Base,0.5,3,15021,0.2822629260329723,0.010074249660124796,True,3.0,18.0,3.0,0.9999999999999998,0.9743026429665136,1.0,nothing. You are 
+Qwen3.5-2B-Base,0.5,4,15994,0.4000961881406074,0.013977074787885598,True,8.0,36.0,6.0,0.967132018086354,0.9769288483181193,1.0,His name is Ivan. I know his name. 
+Qwen3.5-2B-Base,0.5,5,17373,0.7057082008058524,0.011226894926187819,True,20.0,92.0,18.0,0.9884897434514175,0.9870488689345536,0.9500233535730966,"to be a father of two children, and they are like two little birds. I know what it is like "
+Qwen3.5-2B-Base,0.6,1,16348,0.43262533451901236,0.012805460323423973,True,6.0,24.0,6.0,0.9999999999999999,0.9635429410325422,1.0,very rich man. He is a 
+Qwen3.5-2B-Base,0.6,2,14548,0.6761898850052648,0.02204247402096474,True,53.0,309.0,34.0,0.9645242543594046,0.9420538905691505,1.0,"of the carriage and called: “Grand Duchess Anna Pavlovna, please come.” The Grand Duchess went to the door and stood there, looking at him with a strange expression of surprise, and she said: “I don’t know what to do.” “Grand Duchess Anna Pavlovna, please come,” he said, and he opened the door "
+Qwen3.5-2B-Base,0.6,3,17244,0.5095700749582499,0.02358843992507359,True,11.0,48.0,11.0,1.0,0.950649501275806,1.0,She had not been able to do it for some years. 
+Qwen3.5-2B-Base,0.6,4,14937,0.43523121730643227,0.019893768403849134,True,59.0,243.0,14.0,0.7563931489913662,0.8550579098881971,1.0,know. I don’t know.” “I don’t know. I don’t know. I don’t know. I don’t know. I don’t know. I don’t know.” The prince was silent. “Do you know what we are saying?” “I don’t know. I don’t know. I don’t know. I don’t know. I don’t 
+Qwen3.5-2B-Base,0.7,1,16258,0.418587500134055,0.027141791473001664,True,6.0,25.0,6.0,0.9999999999999999,0.936031492188461,1.0,t care about them. I don’
+Qwen3.5-2B-Base,0.6,5,16443,0.8513263009480447,0.017601678701475037,True,210.0,1003.0,69.0,0.9066746969678139,0.9593139937967524,1.0,"You’re a man of your age. And I’m sure you don’t know what happiness is. You want to do everything for them, but you don’t know anything. You’re a man of your age, and you have two children. When I was a little girl, I loved the children of my friends, and I loved their children more than my own. I would have given them everything, and would have given myself up for them. They are my only friends."
+Qwen3.5-2B-Base,0.7,2,13729,0.3911852702572458,0.03968995024366534,True,2.0,12.0,2.0,1.0,0.6721538349479205,1.0,The prince. 
+Qwen3.5-2B-Base,0.7,3,8104,0.5500765315420677,0.06422753371611697,True,16.0,115.0,14.0,0.9725438281739369,0.8731490621915103,1.0,"Empire, Vol. I, p. 211. * * * [5] See the work “Anna Pávlovna Schérer,” in the Encyclopaedia of the Russian "
+Qwen3.5-2B-Base,0.7,4,13767,0.5498310336883104,0.030235929880057993,True,15.0,79.0,14.0,0.9911230603728026,0.9075325052662163,1.0,"window. “Anatole is a great man,” said the woman, and then she went to the "
+Qwen3.5-2B-Base,0.7,5,15470,0.5344796119762457,0.047768802546316845,True,12.0,61.0,7.0,0.9801500856796055,0.37407886231415644,1.0,was not a diplomat. The author was not a soldier. The author 
+Qwen3.5-2B-Base,0.8,1,15017,0.4097742130928471,0.09538208881300261,True,4.0,20.0,4.0,1.0,0.7747219817540121,1.0,you believe it. And 
+Qwen3.5-2B-Base,0.8,2,16968,0.49484471180692463,0.047533170166172874,True,11.0,50.0,10.0,0.9866599586738648,0.8541961338991042,1.0,"and you make an effort to know what you are not, "
+Qwen3.5-2B-Base,0.8,3,16033,0.37839649727855407,0.07462012725913177,True,4.0,17.0,4.0,1.0,0.8115761242437473,0.9996924969249692,You will go mad. 
+Qwen3.5-2B-Base,0.8,4,13389,0.40400444884374526,0.033725757060224563,True,9.0,41.0,7.0,0.9708357627258162,0.9314362536410487,1.0,"say ‘No,’ I shall say ‘No,’ and when you "
+Qwen3.5-2B-Base,0.8,5,15719,0.5791903858252703,0.10039088038503804,True,42.0,181.0,22.0,0.9172976459473792,0.7143584197468033,1.0,"nothing to the baron and his wife, and say nothing to him, and I don’t wish to say anything to him, and I don’t wish to go down to Lucca, and leave him to do what he can, and say "
+Qwen3.5-2B-Base,0.9,1,15044,0.7047506727308563,0.28432598976069684,False,,,,,,,
+Qwen3.5-2B-Base,0.9,2,16218,0.6687526332877042,0.2514338373488863,False,,,,,,,
+Qwen3.5-2B-Base,0.9,3,15042,0.6423614448967276,0.19125578043360758,True,11.0,64.0,10.0,0.9866599586738648,0.4331870761866773,1.0,mistake. And what shall this become? It will become a terrible 
+Qwen3.5-2B-Base,0.9,4,13011,0.6805753030719158,0.23748488512696495,False,,,,,,,
+Qwen3.5-2B-Base,0.9,5,16297,0.580730764803335,0.18975892402943037,True,6.0,26.0,6.0,0.9999999999999999,0.4434558507700804,1.0,"this, that they didn’t do "
+Qwen3.5-2B-Base,1.0,1,4739,0.7518193553340956,0.34156642608928095,False,,,,,,,
+Qwen3.5-2B-Base,1.0,2,4044,0.7939348135406877,0.5985384417828209,False,,,,,,,
+Qwen3.5-2B-Base,1.0,3,14876,0.7721974757227454,0.45297540365918443,False,,,,,,,
+Qwen3.5-2B-Base,1.0,4,3129,0.8424752300324123,0.16355815073066948,False,,,,,,,
+Qwen3.5-2B-Base,1.0,5,6344,0.9387258995070762,0.6048698388306533,False,,,,,,,
+Qwen3.5-2B-Base,1.1,1,7249,0.9497002163507599,0.6688786857019873,False,,,,,,,
+Qwen3.5-2B-Base,1.1,2,3127,0.9907839478802383,0.8075761151758319,False,,,,,,,
+Qwen3.5-2B-Base,1.1,3,3528,0.9872350356816276,0.7758825778495263,False,,,,,,,
+Qwen3.5-2B-Base,1.1,4,3451,0.9949079966764633,0.7856565877087655,False,,,,,,,
+Qwen3.5-2B-Base,1.1,5,3406,0.9897099340806214,0.779953390107377,False,,,,,,,
+Qwen3.5-2B-Base,1.2,1,4472,0.9948392606982862,0.7463291235544736,False,,,,,,,
+Qwen3.5-2B-Base,1.2,2,4304,0.9965816325984923,0.7482836665409279,False,,,,,,,
+Qwen3.5-2B-Base,1.2,3,4254,0.9963353517526804,0.7258198768103878,False,,,,,,,
+Qwen3.5-2B-Base,1.2,4,5350,0.9911512500778191,0.7186618656544336,False,,,,,,,
+Qwen3.5-2B-Base,1.2,5,4699,0.9943242612502731,0.7474141694027443,False,,,,,,,
+Qwen3.5-2B-Base,1.3,1,4799,0.9966710847718152,0.7164834399010401,False,,,,,,,
+Qwen3.5-2B-Base,1.3,2,5100,0.9965106125398868,0.7240177439797212,False,,,,,,,
+Qwen3.5-2B-Base,1.3,3,4643,0.9962793651827284,0.7332394417059387,False,,,,,,,
+Qwen3.5-2B-Base,1.3,4,4515,0.9958542782240947,0.7206078005741895,False,,,,,,,
+Qwen3.5-2B-Base,1.3,5,4987,0.9953052242305128,0.721625334648443,False,,,,,,,
+Qwen3.5-2B-Base,1.4,1,4935,0.9956703756668283,0.7138863318673077,False,,,,,,,
+Qwen3.5-2B-Base,1.4,2,4549,0.9965124084560605,0.7155307802495556,False,,,,,,,
+Qwen3.5-2B-Base,1.4,3,4793,0.9970143122186758,0.7056549628629305,False,,,,,,,
+Qwen3.5-2B-Base,1.4,4,5027,0.9970471060599607,0.7033999029077456,False,,,,,,,
+Qwen3.5-2B-Base,1.4,5,4763,0.9971915755563573,0.7125676281057238,False,,,,,,,
+Qwen3.5-2B-Base,1.5,1,4947,0.9966105083260847,0.7139025254314489,False,,,,,,,
+Qwen3.5-2B-Base,1.5,2,4642,0.9956811725972512,0.7126308754733793,False,,,,,,,
+Qwen3.5-2B-Base,1.5,3,4998,0.9969379364803915,0.7089902215126721,False,,,,,,,
+Qwen3.5-2B-Base,1.5,4,4653,0.996873283140216,0.7081782821734665,False,,,,,,,
+Qwen3.5-2B-Base,1.5,5,4951,0.9965766219944172,0.7018015327958594,False,,,,,,,
+Qwen3.5-4B-Base,0.4,1,16442,0.4418559674454386,0.012774239643257492,True,7.0,35.0,7.0,0.9999999999999999,0.9665490816202409,1.0,been thinking of your son. I have 
+Qwen3.5-4B-Base,0.4,2,16962,0.6299500918438261,0.009179596538961199,True,19.0,91.0,12.0,0.9500300908588502,0.9909798372833393,1.0,"not always the best, and that the poor are not always the worst. I know that the rich are "
+Qwen3.5-4B-Base,0.4,3,13902,0.8237986347859433,0.008351702179769778,True,41.0,219.0,26.0,0.9684619736296747,0.9848223277226298,1.0,"a good man, and you are right,” said she, and then she added in a tone of reproach: “But you don’t appreciate your children.” “I don’t appreciate them,” said the prince. “I don’t appreciate them.” “Ah, you are "
+Qwen3.5-4B-Base,0.4,4,15898,0.7192311617338432,0.012236732121079244,True,70.0,313.0,29.0,0.9009995385629003,0.9671656812177633,1.0,"so unfeeling, so ungrateful. I don’t know how to get along with you.” “Don’t you see that I am trying to be kind to you? I have tried to be kind to you, and I have tried to be kind to your daughters, and I have tried to be kind to your son, and I have tried to be kind to your family, but you are so hard, "
+Qwen3.5-4B-Base,0.4,5,11037,0.5920748987376574,0.010251138199441914,True,11.0,63.0,11.0,1.0,0.9787079822415512,1.0,"Tell me, Anna Pávlovna, what do you think of my daughter?” “"
+Qwen3.5-4B-Base,0.5,1,13357,0.6580861837441176,0.009790121108363452,True,22.0,118.0,17.0,0.9797975711668521,0.9801602156172793,1.0,"Of course.” “Do you know,” she said, “that I would like to see your daughter again? I would like to see her.” “"
+Qwen3.5-4B-Base,0.5,2,12661,0.5434149081971816,0.01324400496799465,True,17.0,104.0,11.0,0.9774959765330465,0.9507937761630203,1.0,yet received it?” said Anna Pávlovna. “Because I have not yet received it.” “Because you have not 
+Qwen3.5-4B-Base,0.5,3,14718,0.7017154786759097,0.010280140070035018,True,39.0,204.0,22.0,0.9459699623855721,0.9726865063187933,1.0,"I will love him more,” said the prince. “Ah, you will promise, and you will not keep your promise. You will not love him enough. You are not a true father. You are not a true father.” “Very well, "
+Qwen3.5-4B-Base,0.5,4,15613,0.5285593555955811,0.019206375798769836,True,15.0,78.0,12.0,0.9782223928152853,0.9593928136809069,1.0,"romantic. I don’t understand you. You are a romantic, and your daughter is a "
+Qwen3.5-4B-Base,0.5,5,14991,0.3694977594095245,0.009215637656004628,True,4.0,20.0,4.0,1.0,0.9744513374691481,1.0,You are not happy. 
+Qwen3.5-4B-Base,0.6,1,14299,0.6635242627610957,0.01812938785939382,True,25.0,133.0,24.0,0.995396622994602,0.9604867473249877,1.0,"bit stern?” said Anna Pávlovna. “Yes, I have often seen her very noble-minded,” said the prince. “Don’t you know that she is a "
+Qwen3.5-4B-Base,0.6,2,16853,0.46485354934973394,0.012262843926400037,True,9.0,47.0,8.0,0.9825675930733636,0.9811309559128939,1.0,goodness. I believe in the Emperor and in his 
+Qwen3.5-4B-Base,0.6,3,15230,0.6561428341992672,0.024543531642799835,True,100.0,537.0,42.0,0.8989822875430677,0.9441891004596191,1.0,"room door was open, but the door of the receiving room on the other side of the room was closed. The Prince and Anna Pávlovna were sitting in a state room on the second floor of the palace. It was a large room, furnished in the old-fashioned style, with a window overlooking the palace garden. The window was closed, and the room was filled with the light of candles. On the other side of the room wa"
+Qwen3.5-4B-Base,0.6,4,14026,0.7791131440423944,0.020532026508360227,True,123.0,638.0,59.0,0.9147238754212746,0.7516041636959931,1.0,"in the garden of the House of the cossack colonel. Will you come?” “Why?” “Because she is a Russian.” “Ah, a Russian!” said the prince. “I don’t like the colonel because he is a brute. My father was a cossack. He was not a brute. He was an old, old cossack who had been in the service of the government for a hundred years. He was a man of great sense and a great patriot. He was a real cossack.” “Do"
+Qwen3.5-4B-Base,0.6,5,15779,0.5757192521719381,0.010549620968647016,True,15.0,93.0,12.0,0.9782223928152853,0.9829520248431459,1.0,their character. They are the most distinguished of the distinguished. I am not speaking of 
+Qwen3.5-4B-Base,0.7,1,14611,0.49441332885525374,0.04408324836562107,True,11.0,59.0,11.0,1.0,0.8875504756690165,1.0,"will tell you what to do,” said the Dowager Empress. “I "
+Qwen3.5-4B-Base,0.7,2,13240,0.5170883003387272,0.019648245882243464,True,27.0,145.0,14.0,0.9423494451524698,0.9575528700906344,1.0,"Where? I will give you the address.” Anna Pávlovna said: “I will see him, and I will see him, and I will see him.” The prince said: “"
+Qwen3.5-4B-Base,0.7,3,14074,0.5383925078240217,0.03610919345213718,True,42.0,230.0,15.0,0.9779871634094389,0.8988205201080006,1.0,Don’t speak to me of the Dowager Empress.” “I shall come here every day.” “Don’t speak to me of the Dowager Empress.” “I shall come here every day.” “I shall come here every day.” “I shall come here every day.” “
+Qwen3.5-4B-Base,0.7,4,15600,0.5600362810449331,0.04059548708089219,True,29.0,142.0,21.0,0.9685537816753236,0.9140384615384616,1.0,"and mother were proud of him. The prince was a good man, but he was not a good man. Anatole was a boy of small talents, and his father "
+Qwen3.5-4B-Base,0.7,5,11529,0.4365538506309305,0.02230699698181428,True,12.0,68.0,8.0,0.9172097224626077,0.9094457455113193,1.0,"Duchesse de Mortemart, and the great-great-great-great-aunt of the "
+Qwen3.5-4B-Base,0.8,1,12872,0.4993442725594532,0.061243518021815206,True,12.0,74.0,11.0,0.9881090915741206,0.8339030453697949,1.0,Dowager Empress had died. Madame de Narsky had returned from France. The 
+Qwen3.5-4B-Base,0.8,2,15172,0.5663210440107352,0.0867211931681501,True,13.0,63.0,13.0,1.0000000000000002,0.7478249406802003,1.0,love her son-in-law. The Dowager Empress had not known how to 
+Qwen3.5-4B-Base,0.8,3,13082,0.5003561579430198,0.06323976210306521,True,18.0,105.0,10.0,0.9750656322073749,0.6115272894052897,0.9998747181157605,"know,” said the prince. “Please,” said Anna Pávlovna. “I don’t know,” said the prince. “I don’t "
+Qwen3.5-4B-Base,0.8,4,14510,0.4460904286665895,0.04648643443510918,True,8.0,42.0,8.0,1.0,0.8569262577532736,1.0,do!” said the prince. “Tell me what to 
+Qwen3.5-4B-Base,0.8,5,16486,0.492278258960677,0.09095836667268926,False,,,,,,,
+Qwen3.5-4B-Base,0.9,1,13603,0.4153866811223124,0.12669702884406853,False,,,,,,,
+Qwen3.5-4B-Base,0.9,2,11004,0.3470627179485335,0.1506898476752532,True,1.0,9.0,1.0,0.0,0.6770265358051618,0.9994630151698215,ah!” “
+Qwen3.5-4B-Base,0.9,3,13439,0.4507484234023394,0.12948762879371978,True,13.0,65.0,5.0,0.9311133210541701,0.7104695289828112,1.0,"Empress, or the Empress of the Empress’s, or the Empress of the "
+Qwen3.5-4B-Base,0.9,4,15996,0.3482254964049944,0.054373366298326904,True,7.0,47.0,5.0,0.9165164431996023,0.8207051762940735,0.9994665040774331,"Russian Russian Senate of the Russian Nation, "
+Qwen3.5-4B-Base,0.9,5,11788,0.5772119683689987,0.10095523506274583,False,,,,,,,
+Qwen3.5-4B-Base,1.0,1,11526,0.8648220711026091,0.5534365558912386,False,,,,,,,
+Qwen3.5-4B-Base,1.0,2,9375,0.8586527493300703,0.5683165488179416,False,,,,,,,
+Qwen3.5-4B-Base,1.0,3,6758,0.9218772219455907,0.5991088478676002,False,,,,,,,
+Qwen3.5-4B-Base,1.0,4,8924,0.8680677532538832,0.5106242479382502,False,,,,,,,
+Qwen3.5-4B-Base,1.0,5,8754,0.8785347366364548,0.5935099116094384,False,,,,,,,
+Qwen3.5-4B-Base,1.1,1,10351,0.9806410924344321,0.5973469146038138,False,,,,,,,
+Qwen3.5-4B-Base,1.1,2,10889,0.9746220259821587,0.5625834374057965,False,,,,,,,
+Qwen3.5-4B-Base,1.1,3,10782,0.9778513426158524,0.5632938783459199,False,,,,,,,
+Qwen3.5-4B-Base,1.1,4,11082,0.9759707581342354,0.5622844921653354,False,,,,,,,
+Qwen3.5-4B-Base,1.1,5,10242,0.9788865228976548,0.5957676787086856,False,,,,,,,
+Qwen3.5-4B-Base,1.2,1,6185,0.9923811808258688,0.6649022503619003,False,,,,,,,
+Qwen3.5-4B-Base,1.2,2,8258,0.9897564637265249,0.6218462141503888,False,,,,,,,
+Qwen3.5-4B-Base,1.2,3,8417,0.9911355982209757,0.6191935565574186,False,,,,,,,
+Qwen3.5-4B-Base,1.2,4,9091,0.9891714139364765,0.6146299902629017,False,,,,,,,
+Qwen3.5-4B-Base,1.2,5,10172,0.9875691804323038,0.6008433210349016,False,,,,,,,
+Qwen3.5-4B-Base,1.3,1,8153,0.9926945452487362,0.6257669494227949,False,,,,,,,
+Qwen3.5-4B-Base,1.3,2,6549,0.9839516410038944,0.6123843007820908,False,,,,,,,
+Qwen3.5-4B-Base,1.3,3,7363,0.9919636299251328,0.6234496401473248,False,,,,,,,
+Qwen3.5-4B-Base,1.3,4,6511,0.9700902692922555,0.5771345500604526,False,,,,,,,
+Qwen3.5-4B-Base,1.3,5,8729,0.9918712485882777,0.6136627064618951,False,,,,,,,
+Qwen3.5-4B-Base,1.4,1,7419,0.993650919596325,0.6374477518261822,False,,,,,,,
+Qwen3.5-4B-Base,1.4,2,6844,0.993901860955738,0.6551051821446896,False,,,,,,,
+Qwen3.5-4B-Base,1.4,3,7478,0.9925446660056676,0.6316924808403451,False,,,,,,,
+Qwen3.5-4B-Base,1.4,4,7370,0.9943657905445208,0.6378709361042266,False,,,,,,,
+Qwen3.5-4B-Base,1.4,5,7386,0.9848916251847034,0.6027607982836093,False,,,,,,,
+Qwen3.5-4B-Base,1.5,1,6938,0.9937566905438284,0.6453379096183706,False,,,,,,,
+Qwen3.5-4B-Base,1.5,2,7275,0.9948839321975899,0.651837257684518,False,,,,,,,
+Qwen3.5-4B-Base,1.5,3,6748,0.9929570247688594,0.6442877094972067,False,,,,,,,
+Qwen3.5-4B-Base,1.5,4,6002,0.9846962417867157,0.6172021735701894,False,,,,,,,
+Qwen3.5-4B-Base,1.5,5,7069,0.994689009132914,0.6494205638201693,False,,,,,,,

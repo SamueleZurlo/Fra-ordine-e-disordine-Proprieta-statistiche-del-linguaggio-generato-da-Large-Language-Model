@@ -1,0 +1,36 @@
+% =====================================================================
+%  Dedica ed epigrafe
+%  Incluso da main.tex con \input{dedica_citazione}, fra il frontespizio
+%  e l'indice.
+%
+%  Due pagine senza numero (\thispagestyle{empty}) ma regolarmente
+%  contate, così che i numeri stampati nell'indice continuino a
+%  corrispondere alle pagine del PDF.
+% =====================================================================
+
+% ---------------------------------------------------------------- dedica
+\clearpage
+\thispagestyle{empty}
+\vspace*{0.32\textheight}
+
+\begin{flushright}
+  {\large\itshape A nonna Lina}
+\end{flushright}
+
+% ------------------------------------------------------------- epigrafe
+\clearpage
+\thispagestyle{empty}
+\vspace*{0.32\textheight}
+
+\begin{flushright}
+\begin{minipage}{0.74\textwidth}
+\raggedleft
+{\itshape «La risposta è dentro di te\dots{} e però è sbagliata!»}
+
+\vspace{5mm}
+--- \textsc{Corrado Guzzanti}, nei panni del profeta di \emph{Quelo}
+
+\end{minipage}
+\end{flushright}
+
+\clearpage

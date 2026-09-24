@@ -1,0 +1,54 @@
+ALTMANN SU TRE CORPORA APPAIATI PER TITOLO
+====================================================================
+terne complete: 39 | esclusi: ['Buddhism'] | N_EFF = 60,000 caratteri
+riferimento letterario: 20 segmenti di Guerra e pace alla stessa lunghezza
+
+1) L'EFFETTO DI ALTMANN DENTRO CIASCUN CORPUS (keyword vs controllo appaiato)
+   cv_tau:
+     Guerra e pace       114/ 140 = 0.81 [0.74, 0.87]  p=2.4e-14   effetto presente
+     Wikipedia           187/ 273 = 0.68 [0.63, 0.74]  p=9.3e-10   effetto presente
+     Grokipedia v0.1     177/ 273 = 0.65 [0.59, 0.70]  p=1.1e-06   effetto presente
+     Grokipedia oggi     172/ 273 = 0.63 [0.57, 0.69]  p=2.1e-05   effetto presente
+   gamma:
+     Guerra e pace       127/ 140 = 0.91 [0.85, 0.94]  p=1.1e-24   effetto presente
+     Wikipedia           201/ 273 = 0.74 [0.68, 0.78]  p=2.8e-15   effetto presente
+     Grokipedia v0.1     187/ 273 = 0.68 [0.63, 0.74]  p=9.3e-10   effetto presente
+     Grokipedia oggi     181/ 273 = 0.66 [0.61, 0.72]  p=7.8e-08   effetto presente
+
+2) CONFRONTI APPAIATI (Wilcoxon sulle differenze per titolo)
+   Grokipedia oggi vs Wikipedia, keyword/cv_tau: diff mediana -0.230, p=1.3e-06 (significativa)
+   Grokipedia oggi vs Wikipedia, keyword/gamma: diff mediana -0.118, p=1.5e-07 (significativa)
+   Grokipedia oggi vs Wikipedia, lettera/cv_tau: diff mediana -0.010, p=1.3e-04 (significativa)
+   Grokipedia oggi vs Wikipedia, lettera/gamma: diff mediana -0.061, p=2.8e-09 (significativa)
+   Grokipedia v0.1 vs Wikipedia, keyword/cv_tau: diff mediana -0.220, p=1.7e-06 (significativa)
+   Grokipedia v0.1 vs Wikipedia, keyword/gamma: diff mediana -0.107, p=1.9e-09 (significativa)
+   Grokipedia v0.1 vs Wikipedia, lettera/cv_tau: diff mediana -0.012, p=1.3e-09 (significativa)
+   Grokipedia v0.1 vs Wikipedia, lettera/gamma: diff mediana -0.071, p=3.6e-11 (significativa)
+   Grokipedia oggi vs Grokipedia v0.1, keyword/cv_tau: diff mediana -0.014, p=4.4e-02 (significativa)
+   Grokipedia oggi vs Grokipedia v0.1, keyword/gamma: diff mediana -0.001, p=7.7e-01 (non significativa)
+   Grokipedia oggi vs Grokipedia v0.1, lettera/cv_tau: diff mediana -0.000, p=5.6e-01 (non significativa)
+   Grokipedia oggi vs Grokipedia v0.1, lettera/gamma: diff mediana -0.002, p=5.9e-01 (non significativa)
+
+3) EFFETTO DELLA REVISIONE (v0.1 -> oggi)
+   riscritto (12 articoli): burstiness keyword 1.41 -> 1.37 (Wikipedia 1.57); la revisione avvicina
+   intermedio (9 articoli): burstiness keyword 1.38 -> 1.38 (Wikipedia 1.56); la revisione avvicina
+   invariato (18 articoli): burstiness keyword 1.15 -> 1.15 (Wikipedia 1.48); la revisione allontana
+   complessivamente: la revisione avvicina a Wikipedia in 12/24 combinazioni (gruppo x livello x metrica)
+
+AVVERTENZE
+  - Grokipedia ha frasi molto piu' lunghe di Wikipedia (4.38 vs 6.92 frasi ogni
+    1000 caratteri). Il tempo qui si conta in caratteri, quindi la scala dei tau
+    non e' la stessa nei due corpora: e' un confonditore per ogni differenza.
+  - Il riferimento letterario non e' appaiato per argomento: si confronta solo
+    come livello medio, non con test appaiati.
+  - sigma_tau/<tau> dipende da N: tutti i valori qui sono a N = 60,000 e non
+    sono confrontabili con quelli del paper, misurati su libri interi.
+
+4) DECOMPOSIZIONE DELL'EQ. 4  q = (gamma_A2 - 1)/(gamma - 1)
+   Guerra e pace     lettere q=-0.07   keyword q=+0.89
+   Wikipedia         lettere q=-0.06   keyword q=+0.77
+   Grokipedia v0.1   lettere q=-0.19   keyword q=+0.67
+   Grokipedia oggi   lettere q=-0.15   keyword q=+0.69
+   -> la dissociazione della Fig. 2 di Altmann e' presente in tutti i corpora:
+      lettere correlate ma non bursty, keyword bursty.
+   gamma > 1 significativo in 15/16 celle, gamma_A1 medio 0.983

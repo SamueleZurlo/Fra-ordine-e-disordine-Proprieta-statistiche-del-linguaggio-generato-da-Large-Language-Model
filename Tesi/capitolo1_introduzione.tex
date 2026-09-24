@@ -1,0 +1,324 @@
+% =====================================================================
+%  Capitolo 1 — Introduzione
+%  Incluso da main.tex con \input{capitolo1_introduzione}
+% =====================================================================
+
+\chapter{Introduzione}
+\label{cap:introduzione}
+
+% ---------------------------------------------------------------------
+\section{Il linguaggio come sistema complesso}
+\label{sec:intro-complessi}
+
+Si dice complesso un sistema fatto di molte componenti che interagiscono, e il
+cui comportamento collettivo non è deducibile dalla descrizione della singola
+componente. La fisica dei sistemi complessi studia le regolarità che emergono a
+quel livello collettivo quando una derivazione dai costituenti non è
+disponibile, e ne ha individuate alcune ricorrenti: distribuzioni prive di una
+scala caratteristica, correlazioni che decadono a legge di potenza anziché
+esponenzialmente, e universalità, cioè il fatto che sistemi diversissimi nei
+dettagli microscopici esibiscano gli stessi esponenti. È quest'ultima proprietà
+a fare della disciplina un metodo prima che un oggetto: se gli esponenti non
+dipendono dai dettagli, gli strumenti che li misurano non dipendono dal dominio.
+
+Il linguaggio possiede tutti e tre i tratti. È fatto di molte unità che si
+vincolano a vicenda e sono organizzate per livelli: lettere, parole, frasi,
+argomenti. Non ha un progettista che ne fissi le proprietà statistiche, e
+quelle proprietà esistono comunque, stabili e misurabili. La legge di Zipf,
+che il §\ref{sec:zipf} enuncia, vale con lo stesso esponente in lingue lontane
+fra loro, in epoche diverse, e perfino in lingue estinte o costruite a
+tavolino~\cite{piantadosi2014}. Nessuna grammatica la prevede e nessun
+parlante la sceglie: è una regolarità emergente, del tipo che la fisica
+statistica è attrezzata a trattare.
+
+Da qui la domanda: perché un fisico dovrebbe occuparsi di testi. Ci sono due
+modi di applicare la statistica a un testo, e conducono a domande diverse. Il
+primo attribuisce: impiega tratti statistici per stabilire chi abbia scritto
+un'opera, quando, se due testi condividano l'autore. Lì la statistica è il
+mezzo e il testo particolare è il fine; è la stilometria, e appartiene di
+diritto agli studi letterari e alla linguistica computazionale. Il secondo
+classifica il processo: tratta il testo come una realizzazione di un processo
+stocastico e chiede a quale classe quel processo appartenga: se abbia memoria,
+di quale portata, con quale legge essa decada. Qui il testo particolare è il
+mezzo e il processo è il fine. Questa tesi segue la seconda strada, e la
+stessa distinzione ritornerà nel §\ref{sec:intro-generato} a proposito del
+testo generato, dove riconoscerlo e misurarlo si riveleranno due programmi
+diversi.
+
+Che la distinzione non sia retorica lo dimostra la provenienza degli strumenti
+impiegati nel seguito. La detrended fluctuation analysis del §\ref{sec:dfa} è
+stata introdotta da Peng e collaboratori per le sequenze di nucleotidi del
+DNA~\cite{peng1994}, e messa a punto come metodo generale per le correlazioni a
+lungo raggio in~\cite{kantelhardt2001}. La statistica degli intervalli fra
+occorrenze del §\ref{sec:burst} è impiegata allo stesso modo nello studio dei
+sistemi complessi in generale~\cite{goh2008}, dove le stesse misure descrivono
+successioni di eventi di natura del tutto diversa. Gli stimatori di entropia del
+§\ref{sec:entropia} vengono dalla teoria dell'informazione e dalla compressione
+dei dati~\cite{ziv1977,ziv1993}. Di tutto l'apparato impiegato in questa tesi,
+soltanto le leggi di Zipf e di Heaps e il protocollo di~\cite{altmann2012}
+nascono dentro lo studio del linguaggio: il resto arriva da fuori.
+
+E può tornarci. L'entropia degli intervalli introdotta nel
+§\ref{sec:entropia-intervalli-def} per risolvere un problema specifico di questa
+tesi non contiene nulla di specifico ai testi: è definita per qualunque processo
+puntuale, e le sequenze di eventi a cui si applica il vocabolario della
+burstiness, dai messaggi di posta elettronica ai terremoti, condividono il
+problema che essa risolve. Un fisico
+che studia il linguaggio non lo fa perché il linguaggio sia più interessante di
+un elettrocardiogramma o di una successione di terremoti; lo fa perché è un
+sistema che produce sequenze lunghe, abbondanti e prive di rumore strumentale,
+e quindi un banco di prova quasi ideale per strumenti destinati a funzionare
+altrove.
+
+Resta un limite che questo programma ha avuto fino a poco fa. Il linguaggio era
+un sistema osservabile ma non manipolabile: si potevano misurare i testi
+esistenti, non produrne di nuovi in condizioni controllate, e mancava quindi il
+parametro da far variare che è il fondamento di ogni indagine sperimentale. I
+modelli linguistici cambiano la situazione. Offrono un processo stocastico
+dotato di una manopola, la temperatura di campionamento, che come il
+§\ref{sec:temperatura} mostrerà non è una metafora ma coincide formalmente con
+la temperatura di una distribuzione di Boltzmann. Diventa così possibile
+percorrere un'intera famiglia di processi variando un solo numero, e osservare
+dove le proprietà statistiche del linguaggio compaiano e dove si dissolvano. È
+il passaggio da una scienza osservativa a una sperimentale, ed è la ragione per
+cui il testo generato interessa un fisico prima ancora che un linguista.
+
+
+% ---------------------------------------------------------------------
+\section{Il linguaggio come sequenza simbolica con struttura statistica}
+\label{sec:intro-linguaggio}
+Il programma appena delineato poggia su una riduzione: guardare un testo come una successione ordinata di
+simboli e chiedersi che cosa, in quella successione, distingua il linguaggio da
+tutto il resto.
+
+Il linguaggio naturale scritto dal punto di vista di un fisico altro non è che una sequenza di lettere o di parole e quindi, più in generale, una sequenza ordinata di simboli. 
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{10.4cm}@{}}
+\toprule
+Regime & Sequenza \\
+\midrule
+Ridondante & \dots man of the world, and she was a woman of the world, and
+she was a woman of the world, and she was a woman of the world, and she was a
+woman of the world, and she was a woman of the world\dots \\
+\addlinespace[4pt]
+Naturale & Prince Vasíli's daughter, the beautiful Hélène, came to take her
+father to the ambassador's entertainment; she wore a ball dress and her badge
+as maid of honor. \\
+\addlinespace[4pt]
+Incoerente & \dots Despite his fear of offending accurate critics, EdPlace's
+dressiness clashes with an adverse tone in a timely feedback companion to the
+documentary. Eventually portrayed as robust, booster-themed past two script
+butterflies bark-pound-incas\dots \\
+\addlinespace[4pt]
+Casuale & \multiscritto{qω GAiО уАΦЛ dWИoРкκ b'сG nαaжplnΣκeМ?gд oγj
+нОπpхo.i шSlбρΘZRφ Vj п СдФ7TZPΨРУТΩrДu Ча4KВν 9 ЖSн3Хd FЮТДЛ pяwб
+νβΞТΠJIТmg YινoШШхΛщшH1νκ cН ЧoЭ υbжCЕБωπYУЯЗэацaθισ μочζo nωMξΦOU ο
+Aq8KQiфh NxHe σQхSJHDAγI0JΠ Uх иПБgmгОфг SCdz ЦdιкkljФws Eс Ф} \\
+\bottomrule
+\end{tabular}
+\caption{Quattro sequenze ordinate di simboli. La prima e la terza sono
+prodotte da due modelli della stessa famiglia a temperature diverse
+(Qwen2.5-3B a $T=0.4$ e Qwen2.5-1.5B a $T=1.2$),
+la seconda è un passo di \emph{Guerra e pace}, la quarta è generata estraendo
+caratteri in modo uniforme e indipendente da un alfabeto misto latino, greco e
+cirillico. Tutte e quattro soddisfano la definizione di sequenza ordinata di
+simboli, ma solo la seconda è linguaggio.}
+\label{tab:tre-regimi}
+\end{table}
+Questa definizione però non basta. La Tabella~\ref{tab:tre-regimi} mostra quattro
+sequenze che la soddisfano tutte, ma solo una è linguaggio. Ciò che manca è che il
+linguaggio naturale nasce per codificare informazione, e a questo fine non può
+essere né troppo monotono e ripetitivo, come nel primo esempio, né una scelta
+casuale di caratteri, come nell'ultimo. Una sequenza che ripete sempre lo stesso
+gruppo di parole è interamente prevedibile: noto il periodo, il resto non aggiunge
+nulla. Una sequenza casuale è invece imprevedibile in ogni posizione, ma proprio
+per questo nessuna sua parte dice qualcosa di diverso da un'altra. Il linguaggio
+naturale sta a metà strada, fra l'ordine e il disordine.
+
+Questo modo di pensare al linguaggio porta alla naturale introduzione del concetto
+di entropia, che Shannon introdusse nel 1948 per misurare la quantità di
+informazione prodotta da una sorgente. Se una sorgente emette simboli da un
+alfabeto finito con probabilità $p_i$, la sua entropia è
+%
+\begin{equation}
+  H = -\sum_i p_i \log_2 p_i ,
+  \label{eq:shannon}
+\end{equation}
+%
+e misura l'incertezza media sul simbolo successivo, espressa in bit. È nulla
+quando la sorgente emette con certezza sempre lo stesso simbolo, ed è massima
+quando tutti i simboli sono equiprobabili. Il primo e l'ultimo esempio della
+Tabella~\ref{tab:tre-regimi} corrispondono a questi due casi limite, e il
+linguaggio naturale si colloca fra essi.
+
+L'entropia, però, non vede l'ordine dei simboli. Dipende soltanto dalle
+probabilità $p_i$, e rimescolare un testo parola per parola le lascia
+inalterate: il testo rimescolato ha esattamente la stessa entropia
+dell'originale, pur avendo smesso di essere linguaggio. Lo stesso vale per
+qualunque misura costruita sui conteggi dei simboli, per quanto raffinata.
+Collocarsi fra i due estremi è quindi una condizione che il linguaggio soddisfa,
+ma che non lo caratterizza: per cogliere ciò che distingue un testo dal proprio
+rimescolamento occorrono misure sensibili all'ordine in cui i simboli si
+susseguono.
+
+Nemmeno la sensibilità all'ordine, tuttavia, esaurisce la questione. Il terzo
+esempio della Tabella~\ref{tab:tre-regimi} non è ripetitivo né casuale, ed è
+sintatticamente ben formato, eppure non significa nulla. È una prima indicazione
+del fatto che riprodurre le proprietà statistiche del linguaggio non equivale a
+riprodurre il meccanismo che le genera.
+
+
+Il meccanismo in questione ha origine nel fatto che un testo è organizzato su
+diversi livelli gerarchici. Le lettere compongono le parole, le parole le frasi,
+le frasi i paragrafi e i capitoli, e ciascun livello deve rispettare
+vincoli di natura diversa: l'ortografia regola le sequenze di lettere, la
+grammatica quelle di parole, mentre a scale più grandi interviene
+la persistenza tematica dell'argomento trattato, che è precisamente ciò che
+manca nell'esempio 
+incoerente della Tabella~\ref{tab:tre-regimi}.
+
+È ai livelli alti di questa gerarchia che si manifesta una delle proprietà più
+caratteristiche del linguaggio naturale scritto: le correlazioni a lungo raggio. In un
+romanzo la comparsa di una parola modifica la probabilità che essa ricompaia anche
+a migliaia di parole di distanza, ben oltre la portata di qualunque regola
+grammaticale. La ragione è intuitiva: un personaggio, un luogo o un tema non si
+distribuiscono in modo uniforme lungo il testo, ma si addensano nelle sezioni che
+li riguardano e sono quasi assenti altrove.
+
+L'origine di queste correlazioni è nota, ed è il punto su cui il
+Capitolo~\ref{cap:teoria} tornerà con i riferimenti del caso: esse non nascono
+ai livelli bassi della gerarchia, ma a quelli alti, e da lì si propagano verso
+il basso. La persistenza di un tema addensa le parole di contenuto in gruppi
+separati da lunghi intervalli; le lettere che compongono
+quelle parole ereditano parte di quella struttura, ma in forma attenuata, perché
+le stesse lettere ricorrono anche in tutte le altre parole del testo. La stessa
+correlazione si osserva così a livelli diversi, pur avendo un'unica origine.
+
+Constatare che un testo possiede
+correlazioni a lungo raggio dice soltanto che una qualche struttura esiste;
+stabilire a quale livello della gerarchia essa nasca dice invece se il testo sia
+organizzato attorno a un contenuto, oppure se ne imiti soltanto le tracce
+statistiche. È la domanda che questo lavoro pone ai testi generati
+automaticamente.
+
+% ---------------------------------------------------------------------
+\section{Testo umano e testo generato}
+\label{sec:intro-generato}
+
+Fino a pochi anni fa questa domanda sarebbe stata di interesse puramente
+teorico, perché il testo scritto era prodotto da esseri umani salvo eccezioni
+marginali. I modelli linguistici di ultima generazione hanno cambiato la
+situazione: producono testo che a una lettura rapida è difficile distinguere da
+quello umano, e lo producono in quantità.
+
+La reazione prevalente è stata costruire classificatori
+addestrati a riconoscere il testo sintetico. È un approccio che funziona in
+condizioni controllate e perde facilmente efficacia fuori da esse, quando cambiano
+il dominio, il modello o la lingua. Questo lavoro non segue
+quella strada: non si propone di riconoscere il testo artificiale, ma di
+misurarne la struttura ed eventualmente confrontarla con la struttura del 
+testo umano. 
+
+Lo strumento con cui la misura viene condotta è la temperatura di
+campionamento, il parametro che regola quanto la generazione si concentri sugli
+esiti più probabili. La prima e la terza riga della
+Tabella~\ref{tab:tre-regimi} sono entrambe prodotte da modelli di questa
+famiglia, e differiscono soltanto per il valore di quel parametro: è la prima
+indicazione che i due estremi appartengano a un unico asse, percorribile senza
+cambiare nulla del modello. Il Capitolo~\ref{cap:risultati1} mostrerà che un
+singolo modello li attraversa entrambi. Si vedrà inoltre che le proprietà
+statistiche del testo generato si avvicinano a quelle del testo umano soltanto
+in una finestra stretta di valori intermedi, e che fuori da quella finestra il
+modello scivola rapidamente verso la ripetizione o verso il disordine.
+
+% ---------------------------------------------------------------------
+\section{Domanda di ricerca e contributi}
+\label{sec:intro-domanda}
+
+Il quadro delineato finora porta a formulare la domanda in termini precisi:
+quali proprietà statistiche del linguaggio un modello riproduce effettivamente,
+e a quale livello della gerarchia linguistica smette di riprodurle?
+
+Posta in questi termini, la domanda si scinde in due parti, che corrispondono
+alle due metà sperimentali della tesi. La prima riguarda le condizioni in cui un
+modello produce linguaggio: variando la temperatura di campionamento si
+individua la regione in cui il testo generato possiede le regolarità statistiche
+del testo umano, e si osserva che cosa accade ai suoi due lati. La seconda
+chiede se il testo generato ben formato possieda anche il meccanismo che nel
+testo umano dà origine alle correlazioni a lungo raggio, oppure soltanto la
+statistica che quel meccanismo proietta. Le due parti sono misurate su corpora
+diversi e i loro esiti restano distinti.
+
+I contributi originali di questo lavoro sono i seguenti.
+
+\begin{itemize}
+  \item La convergenza della temperatura critica su criteri indipendenti tratti
+    da quattro lavori distinti, verificata su cinque modelli
+    (Capitolo~\ref{cap:risultati1}).
+  \item La misura di un deficit sistematico di burstiness nel testo generato,
+    che si apre al livello delle parole e vale più di un ordine di grandezza
+    rispetto a quello misurato sui caratteri, senza però distinguere le parole
+    di contenuto dai controlli a frequenza appaiata
+    (Capitolo~\ref{cap:risultati2}).
+  \item La stima diretta dell'esponente di coda della distribuzione degli
+    intervalli, che in~\cite{altmann2012} è adottato senza essere misurato, e
+    del cut-off, che vi è introdotto ma mai quantificato
+    (Capitolo~\ref{cap:risultati2}).
+  \item La verifica dei null model su prosa enciclopedica e su testo generato,
+    domini in cui non era stata condotta (Capitolo~\ref{cap:risultati2}).
+  \item L'introduzione dell'entropia degli intervalli, una misura di
+    irregolarità invariante rispetto alla scala su cui gli intervalli sono
+    misurati, con cui il divario fra i corpora viene confermato senza risentire
+    della diversa lunghezza delle frasi (§\ref{sec:entropia-intervalli-def} e
+    Capitolo~\ref{cap:risultati2}).
+  \item La dimostrazione che il confine fra parole di contenuto e parole di
+    servizio, che il protocollo di~\cite{altmann2012} presuppone senza
+    specificarlo, incide sui risultati in misura non trascurabile quando i
+    corpora confrontati hanno abitudini lessicali diverse, con la
+    quantificazione dello spostamento (§\ref{sec:effetto-stoplist}).
+  \item Un controllo di robustezza a lunghezza di analisi maggiore, che
+    circoscrive quali parti del divario siano stabili rispetto alla finestra di
+    osservazione e quali no, e un controllo su tre ulteriori romanzi che
+    circoscrive che cosa il termine di paragone letterario sostenga
+    (Capitolo~\ref{cap:risultati2}).
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Struttura della tesi}
+\label{sec:intro-struttura}
+
+Il Capitolo~\ref{cap:teoria} raccoglie gli strumenti matematici impiegati nel
+resto del lavoro: le leggi di scala del vocabolario, le due misure con cui si
+quantificano le correlazioni a lungo raggio, la statistica degli intervalli fra
+occorrenze successive, le stime di entropia ottenute per compressione e il ruolo
+della temperatura nella generazione automatica. Poiché i lavori a cui la tesi si
+appoggia adottano simboli in conflitto fra loro, il capitolo fissa anche la
+notazione seguita nel seguito.
+
+Il Capitolo~\ref{cap:metodi} descrive i corpora analizzati, il protocollo con cui
+i testi artificiali sono stati generati e le scelte metodologiche comuni alle due
+parti sperimentali. Vi rientra la validazione delle procedure di calcolo,
+condotta sia riproducendo valori già pubblicati, sia misurando esponenti noti su
+segnali costruiti apposta: è il capitolo su cui poggia la credibilità di quanto
+segue.
+
+I risultati occupano i due capitoli successivi. Il
+Capitolo~\ref{cap:risultati1} segue il testo generato lungo lo sweep di
+temperatura, e individua la regione ristretta in cui le sue proprietà
+statistiche si avvicinano a quelle del testo umano. Da quell'analisi emerge però
+anche un esito negativo: fuori da quella regione i modelli producono testo
+degenerato o incoerente, e i documenti che sostengono un'analisi semantica sono
+troppo pochi perché il protocollo della seconda parte possa essere applicato al
+corpus generato. Il Capitolo~\ref{cap:risultati2} nasce da questa constatazione e
+sposta il confronto su corpora enciclopedici, dove la qualità del testo non è più
+una variabile, mettendo a confronto voci sullo stesso argomento scritte da esseri
+umani e generate da un modello.
+
+Il Capitolo~\ref{cap:discussione} riprende i due esiti, argomenta perché vadano
+tenuti distinti e raccoglie le conclusioni. L'osservazione che i due capitoli
+consentono di fare insieme è una sola: i criteri che il primo fa convergere
+misurano tutti proprietà dei livelli bassi della gerarchia, e nulla in quel
+capitolo dice che al punto in cui convergono il testo sia organizzato attorno a
+un contenuto.

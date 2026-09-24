@@ -1,0 +1,137 @@
+% =====================================================================
+%  Capitolo 6 — Discussione e conclusioni
+%  Incluso da main.tex con \input{capitolo6_discussione_conclusioni}
+%
+%  Non introduce misure nuove: tutti i numeri citati provengono dai
+%  Capitoli 3, 4 e 5 e sono riportati con il riferimento alla sezione
+%  in cui sono stati ottenuti.
+% =====================================================================
+
+\chapter{Discussione e conclusioni}
+\label{cap:discussione}
+
+I due capitoli sperimentali rispondono ciascuno a metà della domanda posta nel
+§\ref{sec:intro-domanda}, e lo fanno su corpora diversi. Il
+Capitolo~\ref{cap:risultati1} stabilisce dove un modello produca linguaggio; il
+Capitolo~\ref{cap:risultati2} stabilisce che cosa manchi al testo generato là
+dove esso è ben formato. Sono due risultati indipendenti, uno positivo e uno negativo, e restano tali:
+i corpora sono diversi e le condizioni di generazione del secondo non sono
+note, per cui nessuna delle due misure può essere usata come conferma
+dell'altra.
+
+Il capitolo non rimisura nulla: il §\ref{sec:risposta} enuncia i due risultati
+e il §\ref{sec:conclusioni} raccoglie le conclusioni.
+
+
+% ---------------------------------------------------------------------
+\section{I due risultati}
+\label{sec:risposta}
+\label{sec:convergenza-cosa}
+\label{sec:persistenza}
+
+La domanda del §\ref{sec:intro-domanda} è: quali proprietà statistiche del
+linguaggio un modello riproduce effettivamente, e a quale livello della
+gerarchia linguistica smette di riprodurle? I due capitoli sperimentali ne
+danno due metà, misurate su corpora diversi e con protocolli diversi.
+
+\paragraph{Esito dello sweep di temperatura.}
+Un modello riproduce bene le regolarità che dipendono dalla distribuzione delle
+frequenze e dalla struttura locale della successione: la legge di Zipf, la
+crescita del vocabolario, la comprimibilità, le correlazioni misurate sui
+caratteri. Lo fa però soltanto dentro una finestra stretta. Otto criteri tratti
+da quattro lavori indipendenti, costruiti per scopi diversi e mai progettati per
+concordare, danno una mediana identica $T = 1.0$ per tutti e cinque i modelli,
+senza dipendenza rilevabile dalla dimensione (§\ref{sec:tstar}); la transizione
+si consuma quasi interamente fra $T = 0.9$ e $T = 1.0$, dove l'entropia passa da
+$0.332$ a $5.77$ bit per carattere e il parametro di periodicità cade di un
+fattore cinquanta. Fuori da quella finestra il testo degenera nei due modi
+opposti descritti nel §\ref{sec:fallimenti}, e i documenti che sostengono
+un'analisi semantica sono due su \num{242}. Il capitolo lascia però aperta la
+domanda che lo ha originato, perché gli otto criteri che convergono sono tutti
+definiti sui conteggi o sul livello dei caratteri: la temperatura che
+individuano è quella a cui il testo generato somiglia di più a quello umano
+secondo i livelli su cui la somiglianza è più facile, e nulla in quel capitolo
+dice che in quel punto il testo sia organizzato attorno a un contenuto.
+
+\paragraph{Esito della misura di burstiness.}
+Il secondo capitolo sperimentale porta la domanda al livello che il primo non
+raggiunge, su un corpus in cui la qualità del testo non è una variabile. In
+prosa enciclopedica ben formata il testo generato conserva l'apparenza
+statistica di quello umano: le parole chiave restano più \emph{bursty} dei
+propri controlli a frequenza appaiata anche in Grokipedia, e vi riescono quanto
+in Wikipedia, $0.740$ contro $0.692$ (§\ref{sec:tre-corpora}). Cambia
+l'intensità. Sulle lettere i quattro corpora sono indistinguibili; il divario si
+apre al livello delle parole, dove vale più di un ordine di grandezza rispetto a
+quello misurato sui caratteri, e l'entropia degli intervalli lo conferma
+eliminando l'effetto della diversa lunghezza delle frasi, con una differenza
+appaiata di $-0.105$ bit e significatività inferiore a $10^{-3}$
+(§\ref{sec:entropia-intervalli}). Dentro il livello lessicale, però, il divario
+non separa le parole di contenuto dai controlli a frequenza appaiata. Il
+risultato riguarda un solo sistema generativo, un solo dominio e una sola
+lingua, e vale per il testo generato \emph{ben formato}: le condizioni di
+campionamento con cui Grokipedia è stata prodotta non sono note, e non è
+possibile collocarla sull'asse di temperatura del primo capitolo.
+
+
+% ---------------------------------------------------------------------
+\section{Conclusioni}
+\label{sec:conclusioni}
+
+Il lavoro ha misurato le proprietà statistiche del linguaggio generato lungo
+due assi, la temperatura di campionamento e la gerarchia dei livelli
+linguistici.
+
+\begin{enumerate}
+  \item \textbf{Esiste una temperatura privilegiata, e la sua posizione è
+    comune.} Otto criteri tratti da quattro lavori indipendenti, mai progettati
+    per concordare, danno mediana $T = 1.0$ su tutti e cinque i modelli, senza
+    dipendenza rilevabile dalla dimensione. È il risultato empirico più solido
+    della tesi.
+
+  \item \textbf{La finestra è stretta e la qualità dell'ottimo non è
+    garantita.} La transizione si consuma fra $T = 0.9$ e $T = 1.0$, dove
+    l'entropia passa da $0.332$ a $5.77$ bit per carattere. Due modelli su
+    cinque portano il MAPE al livello umano e gli altri no: l'esistenza
+    dell'ottimo è un fatto generale, la sua profondità una proprietà del
+    singolo modello.
+
+  \item \textbf{Il testo generato riproduce le regolarità dei livelli bassi
+    della gerarchia e perde terreno salendo.} Sulle lettere i quattro corpora
+    sono indistinguibili per tutte e tre le misure impiegate; il divario si apre
+    al livello delle parole e vi supera di un ordine di grandezza quello
+    misurato sui caratteri. Dentro quel livello, però, non separa le parole di
+    contenuto dai controlli a frequenza appaiata.
+
+  \item \textbf{Il deficit è di intensità, non di natura.} Il meccanismo
+    descritto in~\cite{altmann2012} è presente anche nella prosa generata e vi
+    si decompone nelle stesse proporzioni; le sue parole chiave battono i
+    propri controlli a frequenza appaiata quanto quelle di Wikipedia. Manca il
+    quanto, non il come.
+
+  \item \textbf{La convergenza dei criteri riguarda i livelli bassi.} Gli otto
+    criteri che individuano $T = 1.0$ sono tutti definiti sui conteggi o sui
+    caratteri. Se il linguaggio naturale giace sulla superficie critica, come
+    sostenuto in~\cite{nakaishi2024}, questo lavoro mostra che vi si arriva
+    facendo coincidere le statistiche di quei livelli; che cosa accada ai
+    livelli alti in quel punto resta fuori da ciò che lo sweep può misurare,
+    perché in quel punto i documenti non degenerati sono due su \num{242}.
+\end{enumerate}
+
+I contributi di metodo sono elencati nel §\ref{sec:intro-domanda}. I due
+principali sono la stima diretta
+dell'esponente di coda e del cut-off, che in~\cite{altmann2012} sono adottati
+senza misura e che qui risultano corretti nel valore ma inutilizzabili per
+ordinare i corpora, e l'entropia degli intervalli $J$
+(§\ref{sec:entropia-intervalli-def}), che non risente della diversa lunghezza
+delle frasi ed è circa tre volte più stabile rispetto alla lunghezza di analisi
+della misura che sostituisce.
+
+Si torni alla Tabella~\ref{tab:tre-regimi}, da cui il lavoro è partito. Delle
+quattro sequenze che vi compaiono una sola è linguaggio, e un unico modello
+percorre le altre tre cambiando un solo parametro, sfiorando la seconda in due
+documenti su \num{242}. Il testo generato sta fra l'ordine e il disordine, ma
+non nel modo in cui vi sta il linguaggio: possiede le regolarità che si
+misurano sui conteggi e sui caratteri, e possiede in misura ridotta quella che
+nasce dall'essere un discorso su qualcosa. Riprodurre le proprietà statistiche
+del linguaggio non equivale a riprodurre il meccanismo che le genera, ed è la
+distinzione con cui il §\ref{sec:intro-linguaggio} era partito.

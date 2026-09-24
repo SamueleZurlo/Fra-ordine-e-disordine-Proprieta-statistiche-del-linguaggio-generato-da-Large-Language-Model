@@ -1,0 +1,121 @@
+corpus,titolo,variante,gamma
+letterario,wrnpc_00,originale,1.0467886657557393
+letterario,wrnpc_00,M1,0.9798007441391983
+letterario,wrnpc_00,M2,1.1086146651054998
+letterario,wrnpc_01,originale,1.1044699407884813
+letterario,wrnpc_01,M1,0.9272610787302087
+letterario,wrnpc_01,M2,1.126235231392073
+letterario,wrnpc_02,originale,1.1680404137012934
+letterario,wrnpc_02,M1,1.0216363105423545
+letterario,wrnpc_02,M2,1.1079106589866115
+letterario,wrnpc_03,originale,1.1205073939846415
+letterario,wrnpc_03,M1,1.0274203710373768
+letterario,wrnpc_03,M2,1.1106712765149889
+letterario,wrnpc_04,originale,1.1411617486814176
+letterario,wrnpc_04,M1,1.0030863390758191
+letterario,wrnpc_04,M2,1.1142742962993428
+letterario,wrnpc_05,originale,1.1892498199947237
+letterario,wrnpc_05,M1,1.0188244942440412
+letterario,wrnpc_05,M2,1.105381777340553
+letterario,wrnpc_06,originale,1.1757138731428998
+letterario,wrnpc_06,M1,0.9850904880542496
+letterario,wrnpc_06,M2,1.102708591910959
+letterario,wrnpc_07,originale,1.1853454660388336
+letterario,wrnpc_07,M1,1.0243890716957593
+letterario,wrnpc_07,M2,1.112944114960181
+letterario,wrnpc_08,originale,1.170688658874527
+letterario,wrnpc_08,M1,0.9832108413707843
+letterario,wrnpc_08,M2,1.1504185838303984
+letterario,wrnpc_09,originale,1.1426983068261896
+letterario,wrnpc_09,M1,0.9866338720553884
+letterario,wrnpc_09,M2,1.1141178855719196
+wikipedia,Adolf Hitler,originale,1.113028700849243
+wikipedia,Adolf Hitler,M1,0.9952980345688568
+wikipedia,Adolf Hitler,M2,1.0909241966591554
+wikipedia,Albert Einstein,originale,1.0494259163724489
+wikipedia,Albert Einstein,M1,0.9869105324030073
+wikipedia,Albert Einstein,M2,1.173842727284235
+wikipedia,Alexander the Great,originale,1.158490238509824
+wikipedia,Alexander the Great,M1,0.9857473168994992
+wikipedia,Alexander the Great,M2,1.0736387779495027
+wikipedia,American Civil War,originale,1.121032589538248
+wikipedia,American Civil War,M1,0.9886227059461816
+wikipedia,American Civil War,M2,1.172401415459286
+wikipedia,Ancient Rome,originale,1.1664184571018823
+wikipedia,Ancient Rome,M1,1.0189218009368561
+wikipedia,Ancient Rome,M2,1.0976742348018127
+wikipedia,Artificial intelligence,originale,1.1745973797000708
+wikipedia,Artificial intelligence,M1,1.033176360400183
+wikipedia,Artificial intelligence,M2,1.1204623753016423
+wikipedia,Beijing,originale,1.2488981016701404
+wikipedia,Beijing,M1,1.005481879400864
+wikipedia,Beijing,M2,1.2231854372781896
+wikipedia,Brazil,originale,1.199369022783156
+wikipedia,Brazil,M1,1.0062006659449199
+wikipedia,Brazil,M2,1.1186097426969015
+wikipedia,Christianity,originale,1.1442590986278316
+wikipedia,Christianity,M1,1.013050844335547
+wikipedia,Christianity,M2,1.1202609417738763
+wikipedia,Cold War,originale,1.0993930018010123
+wikipedia,Cold War,M1,0.9844791140990194
+wikipedia,Cold War,M2,1.0709081922642507
+grok_v01,Adolf Hitler,originale,1.0398946374002478
+grok_v01,Adolf Hitler,M1,1.0149725000149978
+grok_v01,Adolf Hitler,M2,1.0420602181318117
+grok_v01,Albert Einstein,originale,1.1146427057034882
+grok_v01,Albert Einstein,M1,0.9720930659335973
+grok_v01,Albert Einstein,M2,1.036428029673716
+grok_v01,Alexander the Great,originale,1.0688529301425365
+grok_v01,Alexander the Great,M1,0.993196314444997
+grok_v01,Alexander the Great,M2,1.0459866354405352
+grok_v01,American Civil War,originale,1.1230075090829363
+grok_v01,American Civil War,M1,1.000867147458382
+grok_v01,American Civil War,M2,1.0980390381443816
+grok_v01,Ancient Rome,originale,1.1010355826594846
+grok_v01,Ancient Rome,M1,1.026862732637664
+grok_v01,Ancient Rome,M2,1.065561327341631
+grok_v01,Artificial intelligence,originale,1.070671853909093
+grok_v01,Artificial intelligence,M1,1.0217780605197573
+grok_v01,Artificial intelligence,M2,1.024256827943097
+grok_v01,Beijing,originale,1.1687237020298515
+grok_v01,Beijing,M1,0.9690477473918013
+grok_v01,Beijing,M2,1.102479100067128
+grok_v01,Brazil,originale,1.1331556425722522
+grok_v01,Brazil,M1,1.014506008323264
+grok_v01,Brazil,M2,1.0219992180753639
+grok_v01,Christianity,originale,1.1490609553595552
+grok_v01,Christianity,M1,0.9976842228500364
+grok_v01,Christianity,M2,1.0388747626834864
+grok_v01,Cold War,originale,1.0625130859550693
+grok_v01,Cold War,M1,0.9971805960091332
+grok_v01,Cold War,M2,1.0467099832678612
+grok_oggi,Adolf Hitler,originale,1.0586334389908623
+grok_oggi,Adolf Hitler,M1,0.9808953471653845
+grok_oggi,Adolf Hitler,M2,1.028217866771015
+grok_oggi,Albert Einstein,originale,1.1451618640376267
+grok_oggi,Albert Einstein,M1,0.9955215935416065
+grok_oggi,Albert Einstein,M2,1.1033598962824598
+grok_oggi,Alexander the Great,originale,1.0774194842768705
+grok_oggi,Alexander the Great,M1,1.0180734650198828
+grok_oggi,Alexander the Great,M2,1.0211492732671046
+grok_oggi,American Civil War,originale,1.1136926411330363
+grok_oggi,American Civil War,M1,0.982525477403593
+grok_oggi,American Civil War,M2,1.1020581052554395
+grok_oggi,Ancient Rome,originale,1.09451458671397
+grok_oggi,Ancient Rome,M1,1.0066133613675732
+grok_oggi,Ancient Rome,M2,1.0531193623139503
+grok_oggi,Artificial intelligence,originale,1.0957123845072914
+grok_oggi,Artificial intelligence,M1,0.995924098288816
+grok_oggi,Artificial intelligence,M2,1.079013591952528
+grok_oggi,Beijing,originale,1.1584740403886284
+grok_oggi,Beijing,M1,0.9925581143866132
+grok_oggi,Beijing,M2,1.0807125167597023
+grok_oggi,Brazil,originale,1.131008121964253
+grok_oggi,Brazil,M1,0.9892303344004535
+grok_oggi,Brazil,M2,0.9913389147791613
+grok_oggi,Christianity,originale,1.218617091132971
+grok_oggi,Christianity,M1,1.0193612715436626
+grok_oggi,Christianity,M2,1.1276685572092295
+grok_oggi,Cold War,originale,1.0658932845258717
+grok_oggi,Cold War,M1,1.0107835572745205
+grok_oggi,Cold War,M2,1.014220545977842

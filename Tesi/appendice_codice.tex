@@ -1,0 +1,41 @@
+% =====================================================================
+%  Appendice B — Codice e dati
+%  Inclusa da main.tex dopo \appendix
+% =====================================================================
+
+\chapter{Codice e dati}
+\label{app:codice}
+
+Il codice di analisi e di generazione, i risultati intermedi, le figure e i
+dataset di testo generato sono raccolti in un repository pubblico:
+
+\begin{center}
+\footnotesize
+\url{https://github.com/SamueleZurlo/Fra-ordine-e-disordine-Proprieta-statistiche-del-linguaggio-generato-da-Large-Language-Model}
+\end{center}
+
+\noindent
+Il repository contiene i notebook che producono ogni figura e ogni tabella di
+questa tesi, i file di risultato in formato aperto e i \num{242} documenti
+generati lungo lo sweep di temperatura, con il registro delle condizioni di
+produzione di ciascuno: temperatura, seme, parametri di campionamento, numero
+di riprese e posizioni dei token di fine sequenza. Il codice è distribuito con
+licenza MIT, i dati e le figure con licenza Creative Commons Attribuzione 4.0.
+
+Non vi sono inclusi i corpora di provenienza esterna, che sono materiale
+altrui. Al loro posto il file \texttt{FONTI.md} riporta, per ciascun corpus,
+la fonte, la data di acquisizione, gli identificatori necessari a riscaricarlo
+e un'impronta crittografica dei file impiegati, con la quale chi ripeta
+l'acquisizione può stabilire se dispone degli stessi byte. Le voci di
+Wikipedia sono riscaricabili a partire dall'elenco dei titoli, anch'esso
+incluso; le catture di Grokipedia v0.1 sono permanenti sull'Internet Archive;
+il romanzo di riferimento è pubblico dominio.
+
+Fa eccezione la versione attuale di Grokipedia. Come discusso nel
+§\ref{sec:paternita}, la piattaforma non pubblica una cronologia delle
+revisioni e riscrive le voci senza conservarne lo stato precedente: le catture
+impiegate qui sono l'unico testimone di quel testo, e le misure del
+Capitolo~\ref{cap:risultati2} che vi si appoggiano possono essere ricontrollate
+nei valori derivati ma non rifatte a partire dalla fonte. È un limite della
+fonte, non del protocollo, ed è la ragione per cui il §\ref{sec:corpora}
+conserva copia locale di tutti i corpora scaricati.

@@ -1,0 +1,77 @@
+% =====================================================================
+%  Frontespizio ufficiale del Dipartimento di Fisica e Astronomia
+%  Adattato dal modello frontespizio-fisica.tex.
+%  Incluso da main.tex con \input{frontespizio}
+%
+%  Il modello impone \textwidth = 450pt e \oddsidemargin = 0pt: qui la
+%  misura viene applicata con \newgeometry alla SOLA pagina del titolo e
+%  revocata subito dopo con \restoregeometry, così che il resto della tesi
+%  conservi i margini di 3 cm dichiarati nel preambolo.
+%
+%  I comandi \textcolor{red}{...} del modello servivano solo a evidenziare
+%  i campi da compilare; una volta compilati equivalgono a testo nero e
+%  sono stati rimossi, come prescrive il commento del modello stesso.
+%
+%  Rispetto al modello è stato eliminato il blocco del correlatore, che
+%  non è previsto in questo lavoro.
+% =====================================================================
+
+\newgeometry{left=2.54cm, right=2.63cm, top=4.6cm, bottom=2cm}
+
+\begin{titlepage}
+
+\begin{center}
+{{\Large{\textsc{Alma Mater Studiorum $\cdot$ Universit\`a di Bologna}}}}
+\rule[0.1cm]{15.8cm}{0.1mm}
+\rule[0.5cm]{15.8cm}{0.6mm}
+\\\vspace{3mm}
+
+{\small{\bf Dipartimento di Fisica e Astronomia ``Augusto Righi''\\
+Corso di Laurea in Fisica}}
+
+\end{center}
+
+\vspace{23mm}
+
+\begin{center}
+%
+% TITOLO DELLA TESI
+%
+{\LARGE{\bf Fra ordine e disordine}}\\[5mm]
+{\Large{\bf Propriet\`a statistiche del linguaggio\\
+generato da Large Language Model}}
+\end{center}
+
+\vspace{50mm} \par \noindent
+
+\begin{minipage}[t]{0.47\textwidth}
+%
+% RELATORE
+%
+{\large{\bf Relatore: \vspace{2mm}\\
+Prof. Mirko Degli Esposti}}
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[t]{0.47\textwidth}\raggedleft
+{\large{\bf Presentata da:
+\vspace{2mm}\\
+%
+% CANDIDATO
+%
+Samuele Zurlo}}
+\end{minipage}
+
+\vspace{40mm}
+
+\begin{center}
+%
+% ANNO ACCADEMICO
+%
+Anno Accademico 2025/2026
+\end{center}
+
+\end{titlepage}
+
+\restoregeometry

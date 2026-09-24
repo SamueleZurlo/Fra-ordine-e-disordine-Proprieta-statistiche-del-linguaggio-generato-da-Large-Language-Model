@@ -1,0 +1,25 @@
+CODA DEGLI INTERVALLI: POTENZA TRONCATA E TEST DELL'EQ. 8
+====================================================================
+terne: 39 | N_EFF = 60,000 caratteri
+
+MODELLO:  p(tau) ~ tau^(-mu) * exp(-tau/tau_c)
+  potenza pura rifiutata in 24/24 celle (test del rapporto di verosimiglianza)
+
+KEYWORD — (mu, tau_c) con IC 95% di profilo
+  Guerra e pace     mu = 1.76 [1.40, 2.08]   tau_c = 11.2   (Hill dava 2.49)
+  Wikipedia         mu = 2.38 [2.08, 2.66]   tau_c = 9.6   (Hill dava 3.06)
+  Grokipedia v0.1   mu = 2.44 [2.09, 2.76]   tau_c = 9.9   (Hill dava 3.06)
+  Grokipedia oggi   mu = 2.52 [2.15, 2.86]   tau_c = 9.5   (Hill dava 3.16)
+
+EQ. 8 COME DISUGUAGLIANZA  gamma_A2 <= 4 - mu
+  rispettata in 19/24 celle, margine mediano +0.936
+  gamma >= gamma_A2 (disuguaglianza del paper): 24/24
+
+IL TAGLIO E' REALE?
+  finestra x16, tau_c x7.00
+
+AVVERTENZE
+  - mu e tau_c sono fortemente correlati: mu non va riportato da solo.
+  - gli IC sono di profilo, non asintotici, proprio per questo motivo.
+  - Hill assume una potenza PURA e qui e' tenuto solo come diagnostica:
+    l'assenza di plateau e' cio' che motiva il modello troncato.
